@@ -9,9 +9,10 @@ call clrscr
 call dumpregs       
 
 mov al,8Fh
-movzx eax,al            ;extends the upper part of the destination with zeros.
 call dumpregs
 
+movzx eax,al            ;extends the upper part of the destination with zeros.
+call dumpregs
 
 exit
 main endp
