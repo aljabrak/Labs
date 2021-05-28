@@ -8,7 +8,7 @@ main proc
 call clrscr          
 call dumpregs       
 
-mov al,8Fh
+mov al,8Fh              ;8Fh = 10001111b = 143d
 call dumpregs
 
 movsx eax,al            ;extends the upper part of the destination with copy of source operands signed bit.
