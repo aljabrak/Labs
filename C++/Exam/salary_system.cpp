@@ -158,16 +158,16 @@ class base_salary_plus_commissioned: public Employee
 int main ()
 {
     Employee* e1;
-    Salaried s1("Ahmad", "Ali", "12345", 1000);
+    Salaried s1("Saud", "Zahir", "12345", 1000);
     e1 = &s1;
     e1 -> calculate_earnings();
     e1 -> write_to_file();
 
-    Commisioned c1("Haider", "Ali", "1357", 1000, 0.5);
+    Commisioned c1("Talal", "Qamar", "1357", 1000, 0.5);
     c1.calculare_earnings();
     c1.write_to_file();
 
-    base_salary_plus_commissioned b1("Ahsan", "Murad", "0301", 1000, 2000, 0.5);
+    base_salary_plus_commissioned b1("Asad", "Azhar", "0301", 1000, 2000, 0.5);
     b1.calculare_earnings();
     b1.write_to_file();
 }
