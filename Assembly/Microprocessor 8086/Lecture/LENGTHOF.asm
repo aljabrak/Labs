@@ -1,8 +1,8 @@
 Include irvine32.inc
 .stack 100h
 .data
-array1 DWORD 30 DUP(?),0,0
-array2 DWORD 5 DUP(3 DUP(?))
+array1 WORD 30 DUP(?),0,0
+array2 WORD 5 DUP(3 DUP(?))     ;15 DUP(?)
 array3 DWORD 1,2,3,4
 digit_ BYTE "123456",0
 .code
