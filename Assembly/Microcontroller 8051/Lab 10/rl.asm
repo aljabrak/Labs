@@ -1,12 +1,12 @@
 org 00h
 mov p2,#0
-mov a,#10000000b
+mov a,#00000001b
 
 label1:
 
 call delay
 mov p2,a 
-rl a                 ;rotate left.
+rl a                    ;rotate left.
 sjmp label1
 
 delay:
