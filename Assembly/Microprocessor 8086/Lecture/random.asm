@@ -1,4 +1,5 @@
-;Random numbers.
+;Random Range.
+
 Include irvine32.inc
 .stack 100h
 .data
@@ -10,9 +11,9 @@ call dumpregs
 
 mov ecx,5                   ;loop counter.
 L:         
-  mov eax,3000h              ;range 0 to 3000h.
-  call randomrange          ;eax = random integer. (random32 for 32 bit random number.)
-  call writebin             ;write in binary.
+  mov eax,100               ;range 0 to 99.
+  call randomrange          ;eax = random integer.
+  call writedec             ;write in decimal.
   call crlf                 ;one number per line.
   loop L
 exit
