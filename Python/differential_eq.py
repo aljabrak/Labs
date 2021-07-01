@@ -1,4 +1,4 @@
-## Differential Equations.
+## Differential Equations (jupyter notebook).
 from sympy.interactive import printing
 printing.init_printing(use_latex=True)
 from sympy import *
