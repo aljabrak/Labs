@@ -39,7 +39,7 @@ elif x == 2:
     print("x2 =", x2, sep=" ")
     
 elif x == 3:
-        print("Quadratic Equation.")
+        print("Cubic Equation.")
         p = float(input("p = "))
         q = float(input("q = "))
         #cardan's formula.
