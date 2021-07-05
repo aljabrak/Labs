@@ -14,7 +14,7 @@ while start == 1:
     T = float(input("Temperature [K]: "))
     if T > 0:
         T_values.append(T)
-        d = d0 * exp(b * (T - 273.16) )
+        d = d0 * exp(b * (T - 273.17) )
         P = (d * R * T)/M
         P_values.append(P)
         print("Pressure [Pa]: ", format(P, '.3e'))
