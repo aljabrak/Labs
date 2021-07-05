@@ -1,4 +1,5 @@
 from matplotlib.pyplot import *
+from numpy import *
 
 R = 287.058                                   #Specific Gas Constant for Dry Air. [J/Kg.K]
 d0 = 1.2922                                   #Density of Air at 273.17 K.
@@ -12,7 +13,7 @@ start = 1
 while start == 1:
     T = float(input("Temperature [K]: "))
     T_values.append(T)
-    d = d0 * (1 + b * T)
+    d = d0 * exp(b * T)
     P = (d * R * T)/M
     P_values.append(P)
     print("Pressure [Pa]: ", format(P, '.3e'))
@@ -21,5 +22,5 @@ while start == 1:
 plot(T_values,P_values)
 xlabel("Temperature. [K]")
 ylabel("Pressure. [Pa]")
-grid()
+legend()
 show()
