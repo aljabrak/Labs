@@ -3,7 +3,7 @@ from matplotlib.pyplot import *
 R = 287.058                                   #Specific Gas Constant for Dry Air. [J/Kg.K]
 d0 = 1.2922                                   #Density of Air at 273.17 K.
 M = 0.02897                                   #Molar Mass of Dry Air. [Kg/mol]
-b = 3.4E-6                                    #Volumteric Expansion Coefficient of Air. [1/K]
+b = 3.4E-3                                    #Volumteric Expansion Coefficient of Air. [1/K]
 
 T_values = []
 P_values = []
