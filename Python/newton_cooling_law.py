@@ -8,10 +8,10 @@ k = float(input("Heat Transfer Coefficient: k = "))
 T_0 = float(input("Ambient Temperature: T_0 = "))
 
 def cooling_law(T,t):
-    dTdt = -k * (T - T_0)
+    dTdt = -k * (T - T_0)                           # Newton's Law of Cooling.
     return dTdt
 
-T0 = float(input("Initial Temperature: T0 = "))
+T0 = float(input("Initial Temperature: T0 = "))     # Initial Condition.
 
 t = np.linspace(0,40,120)
 
@@ -25,9 +25,9 @@ plt.ylabel('Temperature. T(t)')
 plt.savefig("Law_of_Cooling.png")
 plt.show()
 
-T_exact = T_0 + (T0 - T_0) * np.exp(-k*t)
+T_exact = T_0 + (T0 - T_0) * np.exp(-k*t)           # Exact Solution of Newton's Law of Cooling.
 T_diff = np.abs(T_exact - T)
-plt.semilogy(t, T_diff)
+plt.semilogy(t, T_diff)                             # Logarithmic Graph.
 plt.ylabel("Error")
 plt.xlabel("t")
 plt.title("Error in Numerical Integration.")
