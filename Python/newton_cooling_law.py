@@ -11,15 +11,25 @@ def cooling_law(T,t):
     dTdt = -k * (T - T_0)
     return dTdt
 
-T0 = 5
+T0 = float(input("Initial Temperature: T0 = "))
 
 t = np.linspace(0,40,120)
 
 T = odeint(cooling_law,T0,t)
+T = np.array(T).flatten()
 
 plt.plot(t,T)
 plt.title(r"Newton's Law of Cooling. $\frac{dT}{dt} = k(T - T_{0})$", fontsize=18)
-plt.xlabel('time')
-plt.ylabel('T(t)')
+plt.xlabel('Time.')
+plt.ylabel('Temperature. T(t)')
 plt.savefig("Law_of_Cooling.png")
+plt.show()
+
+T_exact = T_0 + (T0 - T_0) * np.exp(-k*t)
+T_diff = np.abs(T_exact - T)
+plt.semilogy(t, T_diff)
+plt.ylabel("Error")
+plt.xlabel("t")
+plt.title("Error in Numerical Integration.")
+plt.savefig('Error.png')
 plt.show()
