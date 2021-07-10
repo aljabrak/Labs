@@ -1,8 +1,8 @@
 import random
 
-min = 0
-max = 1
-x = random.randint(min,max)
+MIN = 0
+MAX = 1
+x = random.randint(MIN, MAX)
 
 if x == 1:
     print("H")
