@@ -1,6 +1,7 @@
 # Starting Out with Python (4th Edition).
 # Tony Gaddis.
-# Chapter:3 Q.1 Number Analyzer.
+# Chapter:3 
+# Q.1 Number Analyzer.
 
 print("Enter An Integer: ", end=" ")
 x = int(input())
