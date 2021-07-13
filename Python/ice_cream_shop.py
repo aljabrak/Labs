@@ -25,10 +25,9 @@ elif scoop == 4:
 elif scoop == 5:
     scoop = 'Five'
 else:
-    scoop = 6
     print('Family Pack is Available.')
 
-if scoop in scoop_prices and scoop != 6:
+if scoop in scoop_prices:
     print('Price of', scoop, 'scoop is:\033[1;35;40m', scoop_prices[scoop], '\033[0;37;40m')
 else:
     print('Price of Family Pack is: Rs. 500')
