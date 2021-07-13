@@ -1,0 +1,34 @@
+# Feynman's Ice Cream Shop.
+
+print('\tWelcome to\n')
+print("\t\033[1;35;40mFeynman's \033[0;37;46mIce-Cream \033[0;37;40m\n")
+
+flavours = ['Vanilla', 'Chocolate', 'Cookies N Cream', 'Mint Chocolate Chip', 'Chocolate Chip Cookie Dough', 'Buttered Pecan', 'Cookie Dough', 'Strawberry', 'Mango', 'Banana', 'Orange']
+flavours.sort()
+
+for x in range(len(flavours)):
+    print(x + 1, '-', '\033[1;41;37m', flavours[x], ' \033[0;37;40m')
+
+print('\n')
+
+scoop_prices = {'One' : 'Rs.60', 'Two' : 'Rs.120', 'Three' : 'Rs.150', 'Four' : 'Rs.200', 'Five' : 'Rs.230'}
+scoop = int(input('Scoops? '))
+
+if scoop == 1:
+    scoop = 'One'
+elif scoop == 2:
+    scoop = 'Two'
+elif scoop == 3:
+    scoop = 'Three'
+elif scoop == 4:
+    scoop = 'Four'
+elif scoop == 5:
+    scoop = 'Five'
+else:
+    scoop = 6
+    print('Family Pack is Available.')
+
+if scoop in scoop_prices and scoop != 6:
+    print('Price of', scoop, 'scoop is:\033[1;35;40m', scoop_prices[scoop], '\033[0;37;40m')
+else:
+    print('Price of Family Pack is: Rs. 500')
