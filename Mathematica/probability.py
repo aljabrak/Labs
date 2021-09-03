@@ -1,3 +1,6 @@
+"""
+Suppose two numbers are chosen at random from the
+range [0, 1], according to the uniform distribution.
 Suppose 'p' is the probability that the ratio of the
 first number to the second rounds down to an even number.
 """
