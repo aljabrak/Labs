@@ -1,4 +1,5 @@
 // Scope Resolution.
+
 #include <iostream>
 #include <string>
 using namespace std;
