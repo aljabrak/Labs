@@ -22,7 +22,7 @@ if length(fk) == length(Xk)
        xx = xx+x1;
     end
 end
-plot(tt,xx)
+plot(tt,xx);
 end
 
 
