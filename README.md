@@ -16,7 +16,7 @@ Some lecture material is also been shared in files.
 # Miscellaneous
 ### [Electrical Machinery (Matlab).]()
 ### [Python Programming. (Python & Jupyter Notebook)](https://github.com/aljabrak/LABS/tree/main/Python)
-- Book:  [Starting Out with Python.](https://github.com/aljabrak/Starting-Out-with-Python)
+- For Learning Python. <br/> [Starting Out with Python.](https://github.com/aljabrak/Starting-Out-with-Python)
 ### [Mathematics (Python).](https://github.com/aljabrak/LABS/tree/main/Mathematics)
 ### Matlab Learning.
-- Book:  [Introduction To MATLAB 7 For Engineers.](https://github.com/aljabrak/Introduction-to-MATLAB-7-for-Engineers)
+- [Introduction To MATLAB 7 For Engineers.](https://github.com/aljabrak/Introduction-to-MATLAB-7-for-Engineers)
