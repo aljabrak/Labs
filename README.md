@@ -14,6 +14,7 @@ Some lecture material is also been shared in files.
 
 
 # Miscellaneous
+### [Electronic Circuit Design (Python).]()
 ### [Electrical Machinery (Matlab).]()
 ### [Python Programming. (Python & Jupyter Notebook)](https://github.com/aljabrak/LABS/tree/main/Python)
 - For Learning Python. <br/> [Starting Out with Python.](https://github.com/aljabrak/Starting-Out-with-Python)
