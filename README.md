@@ -28,7 +28,7 @@ Some lecture material is also been shared in files.
 
 # Miscellaneous
 ### [Electronic Circuit Design (Python).](https://github.com/aljabrak/LABS-Projects/tree/main/Electronic%20Circuit%20Design)
-### [Electrical Machinery (Matlab).]()
+### [Electrical Machinery (Matlab).](https://github.com/aljabrak/LABS-Projects/tree/main/Electrical%20Machinery)
 ### [Arduino.](https://github.com/aljabrak/LABS-Projects/tree/main/Arduino)
 ### [Embedded C.](https://github.com/aljabrak/LABS-Projects/tree/main/Embedded-C)
 ### [Python Programming (Python & Jupyter Notebook).](https://github.com/aljabrak/LABS/tree/main/Python)
