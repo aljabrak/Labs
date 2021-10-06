@@ -1,0 +1,26 @@
+UTC Clock System.
+
+
+“UTC”, Coordinated Universal Time is a time standard used in the world clocks.
+It is 1 second of mean solar time at 0° longitude. It is also known as “GMT” which is abbreviated as Greenwich Mean Time. 
+It was adopted in 1970 and was implemented in 1972. Time zone is calculated by positive and negative offsets from UTC, for example time in Pakistan is GMT+5:00. 
+The program uses time.h library while in Java programming, through the Clock.getTime ( ) method, the current time will be available. 
+This basic clock class can be extended for numerous other types of clock such as a real-time clock [1]. 
+While “gmtime” and “ctime” functions which are used to print GMT time and Current time of the system respectively are also used.
+Similarly, the asctime functions convert the broken-down time in the structure into a string in the form [2]. 
+For example, the form displayed by asctime function is; Sun Sep 16 01:03:52 1973.
+The goal of our project is to understand the working of different functions like “gmtime” and “asctime” while displaying time of different countries based on their postal code or their name (both uppercase and lower case).
+The user would enter the information of desired country and will get its time stats. Our program displays live time and is similar to how it is seen on our mobile screens. 
+We have made a C program that defines the time zone of region and defines time in both UCT and PDT (Pacific Day Time, a time system used in North and South America UCT - 7:00). Furthermore the user will be asked to enter the country name and the program will output the time of zone entered. The time of the zone will be in UCT and PDT also.
+Moreover, many other languages have their own operating system for time information such as Java, Perl and Java script; Java Platform, from version 1.3.1, has its own time zone database. 
+We have made a program which uses C date and Time functions. Instantly, localtime, ctime, asctime are time functions etc.
+The localtime function returns a pointer to the broken-down time or a null pointer if the specified time cannot be converted to local time [3].
+Actually, these libraries and functions are provided in C language. Our program is a GMT or UCT clock system.
+This clock system uses GMT time and User data and evaluates time zone of Entered zone or area. 
+This Program is very effective in determining the time of different countries and zones by just using time.h library and time functions in C language.
+
+
+References:
+[1] Selvarajan, Dinesh. Implementation of real-time java using kurt. Diss. University of Kansas, 2000.
+[2] Gustedt, Jens. "Modernize time. h functions v. 2." (2019).
+[3] Gustedt, Jens. "Modernize time. h functions v. 2." (2019).

@@ -1,0 +1,21 @@
+Library Managment System. (Object Oriented Program)
+
+**login class handles the function related to login. It has no function only a constructor which performs
+the function of login.
+
+**Library class has following methods
+search_book : to search for a book in a file
+return_book : to return the book. It changes availability status of the book
+display_issued_books : to display list of issued books
+display_all : displays the list of all books
+
+**student class inherit from the library class 
+it has following overloaded functions : 
+return_book
+display_issued_books
+
+**book class is the last class which handles the functions of adding books and issuing books 
+through the following functions
+
+issue_book
+add_book

@@ -1,0 +1,24 @@
+# bank_account
+
+The data members of class are following:
+Char[20] username
+Double CNIC No.
+Char[20] Account type (Current/saving) (ask user to enter 1 for current and 2 for saving)
+If account is saving 
+Char[10] Profit type(monthly/yearly) ask user 1 for monthly 2 for yearly
+Float balance
+
+The functions are following:
+Constructor for current account—initializes 4 values
+Constructor for saving account—initializes 5 values
+Get/set methods for all data members due to security concerns
+Following details will be default values of the user
+Name: Name
+CNIC: 0000000000000
+Account type: Current
+	If saving default profit value will be
+	Profit type: Yearly
+Balance: 0.0
+After creating account you will show all details of the user.(while creating account do not ask for balance)
+Then you can ask user to add balance or exit. Press 1 for add amount press 2 for exit
+After adding balance the program will show balance and will end.
