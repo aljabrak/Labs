@@ -19,6 +19,10 @@ Some lecture material is also been shared in files.
 - [Robotic Arm (Embedded C)](https://github.com/aljabrak/LABS-Projects/tree/main/Projects/Assembly/robotic-arm)
 - [DTMF encoder & decoder (Matlab)](https://github.com/aljabrak/LABS-Projects/tree/main/Projects/Matlab/DTMF-encoder-decoder)
 # Assignments
+- [Bank Account (C++)](https://github.com/aljabrak/LABS-Projects/tree/main/Assignments/bank-account)
+- [Phonebook App (C++)](https://github.com/aljabrak/LABS-Projects/tree/main/Assignments/phonebook-app)
+- [Traffic System (C++)](https://github.com/aljabrak/LABS-Projects/tree/main/Assignments/traffic-system)
+- [Analog Clock (Assembly x86)](https://github.com/aljabrak/LABS-Projects/tree/main/Assignments/analog-clock)
 
 # Miscellaneous
 ### [Electronic Circuit Design (Python).](https://github.com/aljabrak/LABS-Projects/tree/main/Electronic%20Circuit%20Design)
