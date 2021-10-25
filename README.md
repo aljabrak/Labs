@@ -1,6 +1,5 @@
 # LABS
 These are the Electrical Engineering Labs, Assignments and End Semester Projects which I did at SEECS NUST, Islamabad. <br/>
-Some lecture material is also been shared in files.
 
 
 ### [Fundamental of Programming Languages (C).](https://github.com/aljabrak/LABS/tree/main/C)
