@@ -7,3 +7,4 @@ plt.polar(theta, r, 'r')
 plt.legend() 
 plt.savefig("Cardioid.png")
 plt.show() 
+
