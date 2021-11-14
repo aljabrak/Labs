@@ -52,17 +52,16 @@ def main():
         for lines in code:
             for char in lines:
                 if char == '.':
-                    playsound('dash.wav')
-                    time.sleep(1)
+                    playsound('code.wav')
+                    time.sleep(2)
                 
                 elif char == '-':
-                    playsound('dash.wav')
-                    time.sleep(0.1)
-                    playsound('dash.wav')
-                    time.sleep(1)
+                    playsound('code.wav')
+                    playsound('code.wav')
+                    time.sleep(2)
             
                 else:
-                    None
+                    time.sleep(4)
 
 
 main()
