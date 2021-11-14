@@ -1,4 +1,8 @@
+from playsound import playsound
+import wave
+import time
 import os
+
 
 def morse_code(string):
     """
@@ -10,7 +14,6 @@ def morse_code(string):
     """
     
     string = string.upper()
-    
     character = [
         ',', '.', '?', '!', '0', '1', '2', 
         '3', '4', '5', '6', '7', '8',
@@ -43,6 +46,23 @@ def main():
             text_file = file.readlines()
             for lines in text_file:
                 code_file.writelines(morse_code(lines))
+    
+    with open('morse_code.txt', 'r') as file:
+        code = file.readlines()
+        for lines in code:
+            for char in lines:
+                if char == '.':
+                    playsound('dash.wav')
+                    time.sleep(1)
+                
+                elif char == '-':
+                    playsound('dash.wav')
+                    time.sleep(0.1)
+                    playsound('dash.wav')
+                    time.sleep(1)
+            
+                else:
+                    None
 
 
 main()
