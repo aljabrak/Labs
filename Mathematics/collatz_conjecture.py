@@ -22,5 +22,6 @@ def f(n):
         print(a)
         f(a)
 
+        
 N = 10**20
 f(N)
