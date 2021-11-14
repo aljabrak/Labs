@@ -5,6 +5,7 @@ Suppose 'p' is the probability that the ratio of the
 first number to the second rounds down to an even number.
 """
 
+
 from numpy import *
 from matplotlib.pyplot import *
 
