@@ -1,0 +1,37 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="maxminlibrary"
+ProjectDir="$(Install_dir)\tutorial\dsk6713\datedisplay\"
+ProjectType=Library
+CPUFamily=TMS320C62XX
+Tool="Archiver"
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="averagevalue.c"
+Source="maximumvalue.c"
+Source="minimumvalue.c"
+
+["Archiver" Settings: "Debug"]
+Options=-r -o.\Debug\maxminlibrary.lib
+
+["Archiver" Settings: "Release"]
+Options=-r -o.\Release\maxminlibrary.lib
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -o3 -fr".\Debug"
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr".\Release"
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+

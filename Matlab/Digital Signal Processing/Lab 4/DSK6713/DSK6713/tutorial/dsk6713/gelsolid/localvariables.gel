@@ -1,0 +1,15 @@
+
+menuitem "GEL Example";
+hotmenu Using_Local_Variables()
+{		
+	int i;
+	
+	for (i = 0; i < 10; i++)
+		GEL_TextOut("GEL is a solid tool.\n");
+
+}
+
+
+
+
+

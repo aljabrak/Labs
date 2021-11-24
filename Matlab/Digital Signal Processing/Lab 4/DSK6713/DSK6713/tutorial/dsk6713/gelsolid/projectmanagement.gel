@@ -1,0 +1,25 @@
+
+// A GEL Function showcasing GELs ability 
+// to automate common tasks
+
+menuitem "Project Management Tool";
+hotmenu Run_Project()
+{		
+	// Call standard GEL library function to load project
+	GEL_ProjectLoad("C:\\Source\\HelloDSP.pjt");
+
+	// Call standard GEL library function to build project
+	GEL_ProjectBuild();
+	
+	// Call standard GEL library function to load the DSP program
+	GEL_Load("C:\\Source\\Debug\\HelloDSP.out");
+	
+	// Call standard GEL library function to run the project
+	GEL_Run();
+	
+	// Indicate that the GEL script is finished
+	GEL_TextOut("Finished Executing GEL Script!");			
+}
+
+
+

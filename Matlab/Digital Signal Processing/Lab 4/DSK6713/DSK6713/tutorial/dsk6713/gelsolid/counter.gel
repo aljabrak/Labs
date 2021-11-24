@@ -1,0 +1,12 @@
+
+menuitem "Set Counter Value"
+dialog Set_Counter(counterParam "Load")
+{
+	counterValue = counterParam;
+}
+
+menuitem "Vary Counter Value"
+slider Vary_Counter(0, 10, 1, 1, counterParam)
+{
+	counterValue = counterParam;
+}

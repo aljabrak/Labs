@@ -1,0 +1,14 @@
+
+menuitem "GEL Welcome Tool";
+hotmenu Welcome_To_GEL_Function()
+{		
+	
+	GEL_TextOut("GEL is a solid tool.\n");
+	
+
+}
+
+
+
+
+
