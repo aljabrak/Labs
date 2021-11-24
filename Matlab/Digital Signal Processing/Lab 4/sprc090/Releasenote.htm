@@ -1,0 +1,740 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="Releasenote1_files/filelist.xml">
+<title>Release note for C55x CSL</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>prashantd</o:Author>
+  <o:LastAuthor>naveen</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>34</o:TotalTime>
+  <o:Created>2006-07-14T07:33:00Z</o:Created>
+  <o:LastSaved>2006-07-14T07:33:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>396</o:Words>
+  <o:Characters>2259</o:Characters>
+  <o:Company>Mistral</o:Company>
+  <o:Lines>18</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>2650</o:CharactersWithSpaces>
+  <o:Version>10.6626</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 0 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:142814167;
+	mso-list-template-ids:665765830;}
+@list l0:level1
+	{mso-level-start-at:3;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:277568611;
+	mso-list-template-ids:519367570;}
+@list l1:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:285552250;
+	mso-list-template-ids:1395713312;}
+@list l2:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:461776841;
+	mso-list-template-ids:-487392482;}
+@list l3:level1
+	{mso-level-start-at:6;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:910968211;
+	mso-list-template-ids:-899277182;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5
+	{mso-list-id:1087381406;
+	mso-list-template-ids:1395317522;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6
+	{mso-list-id:1091582639;
+	mso-list-template-ids:106717708;}
+@list l6:level1
+	{mso-level-start-at:5;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7
+	{mso-list-id:1314990150;
+	mso-list-template-ids:1503313174;}
+@list l7:level1
+	{mso-level-start-at:2;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8
+	{mso-list-id:1331371244;
+	mso-list-template-ids:1729031888;}
+@list l8:level1
+	{mso-level-start-at:4;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9
+	{mso-list-id:1855803440;
+	mso-list-template-ids:-191600160;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l10
+	{mso-list-id:2121223756;
+	mso-list-template-ids:223748308;}
+@list l10:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+<meta http-equiv=Content-Language content=en-us>
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1 align=center style='text-align:center'>Release note for C6000 CSL</h1>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<h3 style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo2;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Introduction</h3>
+
+<h3 style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo2;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Directory
+structure</h3>
+
+<h3 style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo2;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Setting
+up build environment to use CSL</h3>
+
+<h3 style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo2;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Using
+CSL examples</h3>
+
+<h3 style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo2;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+class=SpellE>Unarchive</span> the sources</h3>
+
+<h3 style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo2;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Bugs
+fixed</h3>
+
+<p>&nbsp;</p>
+
+</blockquote>
+
+</blockquote>
+
+<h4 style='margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo4;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Introduction</h4>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p><span style='font-size:10.0pt;font-family:Verdana'>This is the release note
+for C6000 CSL version 2.31.00.16. This release provides chip support libraries
+for C6201, C6202, C6203, C6204, C6205, C6211, C6410, C6411, C6412, C6413,
+C6414, C6415, C6416, C6701, C6711, C6711C, C6712, C6712C, C6713, DA610 and
+DM642 devices. All the libraries under folder lib_2x are built using <span
+class=SpellE>Codegen</span> tools v4.32 with options -mo -al -k -<span
+class=SpellE>qq</span> -o3 -ml3 and all the libraries under folder lib_3x are
+built using <span class=SpellE>Codegen</span> tools v5.1.0 with options -mo -al
+-k -<span class=SpellE>qq</span> -o3 -ml3. User documentation for C6000 CSL can
+be found in &quot;TMS320C6000 Chip Support Library API Reference Guide&quot;
+(spru401).</span></p>
+
+</blockquote>
+
+<h4 style='margin-left:.5in;text-indent:-.25in;mso-list:l7 level1 lfo6;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Directory
+structure</h4>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p><span class=GramE><span style='font-size:10.0pt;font-family:Verdana'>include</span></span><span
+style='font-size:10.0pt;font-family:Verdana'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- This directory contains CSL headers. <span class=GramE>(e.g. <span
+class=SpellE>csl_dma.h</span>, <span class=SpellE>csl_mcbsp.h</span> etc.)</span></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Verdana'>lib_2x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-
+This directory contains CSL libraries (e.g. csl6201.lib, csl6201e.lib etc.)
+and&nbsp;<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Verdana'><span
+style='mso-spacerun:yes'>                        </span>&nbsp; <span
+class=GramE>archives</span> CSL sources in (csl6000.src) </span><span
+style='font-size:10.0pt;font-family:Verdana;mso-bidi-font-family:Arial'>for
+Code <span class=SpellE>Compser</span> Studio with version 2.21</span><span
+style='font-size:10.0pt;font-family:Verdana'><o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Verdana'>lib_3x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-
+This directory contains CSL libraries (e.g. csl6201.lib, csl6201e.lib etc.)
+and&nbsp;<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Verdana'><span
+style='mso-spacerun:yes'>                        </span>&nbsp; <span
+class=GramE>archives</span> CSL sources in (csl6000.src) </span><span
+style='font-size:10.0pt;font-family:Verdana;mso-bidi-font-family:Arial'>for
+Code <span class=SpellE>Compser</span> Studio with version 3.1</span></p>
+
+<p><span class=GramE><span style='font-size:10.0pt;font-family:Verdana'>examples</span></span><span
+style='font-size:10.0pt;font-family:Verdana'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- This directory contains CSL examples for evm6201, dsk6211 , dsk6711 , <o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Verdana'><span
+style='mso-spacerun:yes'>                          </span><span class=GramE>dsk6713</span>
+and evmDM642.<o:p></o:p></span></p>
+
+<p><span class=GramE><span style='font-size:10.0pt;font-family:Verdana'>docs</span></span><span
+style='font-size:10.0pt;font-family:Verdana'><span
+style='mso-spacerun:yes'>                 </span>- This directory contains the <span
+class=SpellE>Releasenote</span> for the C6x CSL.</span></p>
+
+</blockquote>
+
+<h4 style='margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo8;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Setting
+up build environment to use CSL</h4>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l5 level1 lfo11;tab-stops:list .5in'><i>In CCS based build
+     environment</i>:</li>
+</ul>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p><span style='font-size:10.0pt;font-family:Verdana'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Assuming CSL is installed at </span><span style='font-family:"Courier New"'>&lt;<span
+class=SpellE>User_Install_Dir</span><span class=GramE>&gt;<span
+style='font-size:10.0pt'> </span><span style='font-size:10.0pt;font-family:
+Verdana;mso-bidi-font-family:"Times New Roman"'>,</span></span></span><span
+style='font-size:10.0pt;font-family:Verdana'> all the existing CCS project
+files need to add :</span></p>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p><span style='font-family:"Courier New"'>-<span class=SpellE>i</span>&quot;&lt;<span
+class=SpellE>User_Install_Dir</span>&gt;\include&quot;</span><span
+style='font-size:10.0pt;font-family:Verdana'> in compiler options and</span></p>
+
+<p><span style='font-family:"Courier New"'>-l&quot;&lt;<span class=SpellE>User_Install_Dir</span>&gt;\lib_2x&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New"'> </span><span
+style='font-size:10.0pt;font-family:Verdana'>in linker options OR<o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New"'>-l&quot;&lt;<span class=SpellE>User_Install_Dir</span>&gt;\lib_3x&quot;
+</span><span style='font-size:10.0pt;font-family:Verdana'>with respect to CCS2x
+or CCS3x</span></p>
+
+</blockquote>
+
+</blockquote>
+
+</blockquote>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo14;tab-stops:list .5in'><i>In Non-CCS based build
+     environment</i>:</li>
+</ul>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p><span style='font-size:10.0pt;font-family:Verdana'>Assuming </span><span
+style='font-family:"Courier New"'>&lt;<span class=SpellE>User_Install_Dir</span>&gt;</span><span
+style='font-size:10.0pt;font-family:Verdana'> is the directory of CSL <span
+class=GramE>installation, all <span class=SpellE>makefiles</span> used to build
+the application need</span> to add:</span></p>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p><span style='font-family:"Courier New"'>-<span class=SpellE>i</span>&quot;&lt;<span
+class=SpellE>User_Install_Dir</span>&gt;\include&quot;</span><span
+style='font-size:10.0pt;font-family:Verdana'> in compiler options and</span></p>
+
+<p><span style='font-family:"Courier New"'>-l&quot;&lt;<span class=SpellE>User_Install_Dir</span>&gt;\lib_2x&quot;</span><span
+style='font-size:10.0pt;font-family:Verdana'> in linker options OR<o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New"'>-l&quot;&lt;<span class=SpellE>User_Install_Dir</span>&gt;\lib_3x&quot;
+</span><span style='font-size:10.0pt;font-family:Verdana'>with respect to CCS2x
+or CCS3x</span></p>
+
+</blockquote>
+
+</blockquote>
+
+</blockquote>
+
+</blockquote>
+
+<h4 style='margin-left:.5in;text-indent:-.25in;mso-list:l8 level1 lfo16;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Using
+CSL examples</h4>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p><span style='font-size:10.0pt;font-family:Verdana'>The CSL examples provided
+with this release use CSL headers and libraries from CCS installation by default.
+In order to build the examples using latest CSL in this release, please refer
+point 3 above.</span></p>
+
+</blockquote>
+
+<h4 style='margin-left:.5in;text-indent:-.25in;mso-list:l6 level1 lfo18;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+class=SpellE>Unarchive</span> the sources</h4>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p><span style='font-size:10.0pt;font-family:Verdana'>All CSL sources (header
+files, c files and <span class=SpellE>asm</span> files) can be <span
+class=SpellE>unarchived</span> using following command:</span></p>
+
+<p><span class=GramE><span style='font-family:"Courier New"'>ar6x</span></span><span
+style='font-family:"Courier New"'> x csl6000.src</span></p>
+
+</blockquote>
+
+<h4 style='margin-left:.5in;text-indent:-.25in;mso-list:l3 level1 lfo20;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Bugs
+fixed</h4>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Verdana'>PSG00001579 – Spelling mistakes in
+the header file <span class=SpellE>csl_tcp.h</span> were rectified. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;mso-layout-grid-align:none;text-autospace:
+none'><span style='font-size:10.0pt;font-family:Verdana'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+0in'><span style='font-size:10.0pt;font-family:Verdana'><o:p>&nbsp;</o:p></span></p>
+
+</blockquote>
+
+</div>
+
+</body>
+
+</html>
