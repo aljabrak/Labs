@@ -1,14 +1,14 @@
-% Frequency Modulation.
+% Phase Modulation.
 
 t = 0: 0.001: 1;
-fc = 500;
-fm = 35;
+fc = 10;
+fm = 2;
 Am = 1;
 Ac = 1;
 c = Ac*cos(2*pi*fc*t);
 m = Am*cos(2*pi*fm*t);
-kf = 70;
-s = fmmod(m, fm, 3*fm, kf);
+kp = 2;
+s = Ac*cos(2*pi*fc*t+kp*Mt);
 
 subplot(3,1,1)
 plot(t, m)
