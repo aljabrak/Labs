@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- ************************************************************ -->
+<!-- Files created by Spectrum Digital Inc.                       -->
+<!-- $Revision:: 2                                              $ -->
+<!-- $Date:: 12/29/04 12:52p                                    $ -->
+<!-- (C) Copyright 2004 by Spectrum Digital Incorporated          -->
+<!-- All rights reserved                                          -->
+<!-- ************************************************************ -->
+<drivers id="TMS320C6713 DSK">
+	<isa Type="TMS320C6710" ProcID="0x50019F28">
+		<driver file="sdgo6713dsk.dvr">
+			<connectionType Type="SDDSKUSB"/>
+		</driver>
+	</isa>
+</drivers>

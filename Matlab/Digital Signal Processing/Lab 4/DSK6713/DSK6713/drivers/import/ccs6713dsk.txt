@@ -1,0 +1,10 @@
+# Each field should be seperated by a TAB character						
+# The first column is the import configuration files which must be created using cc_setup						
+# All the configuration files must be located in %WINDIR%\ti\drivers\import						
+# The second column is a short description the user will see. This should have enough information that the advanced user will not need to read the long description						
+# The short description should not be too cryptic for the novice users and no two configurations should have the same short description.						
+# The long description should contain any detailed information which the user may need to know						
+# Enter an asterisk in a field to mean that this field does not apply to the given configuration file						
+# To save this file highlight the area you want to save, copy it to the clipboard then paste it into Notepad						
+Configuration file	Short Description	Long Description	Family	Platform	Endianness	Memory Map
+dsk6713.ccs	C6713 DSK	One Spectrum Digital TMS320C6713 DSK connected via USB set to i/o port 0x540.	C67xx	dsk	*	*
