@@ -1,0 +1,50 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="mainapplication"
+ProjectDir="$(Install_dir)\tutorial\dsk6416\maxminmath\"
+ProjectType=Executable
+CPUFamily=TMS320C64XX
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="$(Install_dir)\c6000\cgtools\lib\rts6700.lib"
+Source="anothertestapp.c"
+Source="Debug\maxminlibrary.lib"
+Source="testapp.c"
+Source="mainapplication.cmd"
+
+["Debug" Settings]
+InitialBuildCmd=echo Building the Main Application
+InitialBuildCmd=set PATH
+FinalBuildCmd=echo Done Building the Main Application
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr".\Debug"
+
+["Compiler" Settings: "Release"]
+Options=-g -q -o3 -fr".\Release" -mv6400
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-q -c -o".\Debug\mainapplication.out" -x
+
+["Linker" Settings: "Release"]
+Options=-q -c -o".\Release\mainapplication.out" -x
+
+["anothertestapp.c" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["testapp.c" Settings: "Debug"]
+PreBuildCmd=echo Building Test Application File (testapp.c)
+PostBuildCmd=echo Finished Building Test Application File (testapp.c)
+

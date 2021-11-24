@@ -1,0 +1,42 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="MaxMinLibrary"
+ProjectDir="$(Install_dir)\tutorial\dsk6713\maxminmath\"
+ProjectType=Library
+CPUFamily=TMS320C64XX
+Tool="Archiver"
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="averageValue.c"
+Source="maximumValue.c"
+Source="minimumValue.c"
+
+["Archiver" Settings: "Debug"]
+Options=-r -o.\Debug\MaxMinLibrary.lib
+
+["Archiver" Settings: "Release"]
+Options=-r -o.\Release\MaxMinLibrary.lib
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -o3 -fr".\Debug"
+
+["Compiler" Settings: "Release"]
+Options=-g -q -o3 -fr".\Release"
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["averageValue.c" Settings: "Debug"]
+UseCustomBuild=true
+CustomBuildCmd=$(Install_dir)\c6000\cgtools\bin\cl6x "averageValue.c" -fr "debug"
+CustomBuildOutput="debug\averageValue.obj"
+

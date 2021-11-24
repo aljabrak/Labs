@@ -1,0 +1,41 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="hostio"
+ProjectDir="$(Install_dir)\tutorial\dsk6713\hostio1\"
+ProjectType=Executable
+CPUFamily=TMS320C67XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="hostio.c"
+Source="hostio.cdb"
+
+[Generated Files]
+Source="hostiocfg.cmd"
+Source="hostiocfg.s62"
+Source="hostiocfg_c.c"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -o3 -fr".\Debug"
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr".\Release"
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-c -o".\Debug\hostio.out" -x
+
+["Linker" Settings: "Release"]
+Options=-c -o".\Release\hostio.out" -x
+

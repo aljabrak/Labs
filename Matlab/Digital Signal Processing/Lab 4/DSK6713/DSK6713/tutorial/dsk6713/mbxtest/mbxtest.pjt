@@ -1,0 +1,41 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="mbxtest"
+ProjectDir="$(Install_dir)\tutorial\dsk6713\mbxtest\"
+ProjectType=Executable
+CPUFamily=TMS320C67XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="mbxtest.c"
+Source="mbxtest.cdb"
+
+[Generated Files]
+Source="mbxtestcfg.cmd"
+Source="mbxtestcfg.s62"
+Source="mbxtestcfg_c.c"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -o3 -fr".\Debug" -mv6700
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr".\Release" -mv6700
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-c -o".\Debug\mbxtest.out" -x
+
+["Linker" Settings: "Release"]
+Options=-c -o".\Release\mbxtest.out" -x
+
