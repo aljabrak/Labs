@@ -1,0 +1,41 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="quetest1"
+ProjectDir="$(Install_dir)\examples\dsk6713\bios\quetest\"
+ProjectType=Executable
+CPUFamily=TMS320C67XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="quetest1.c"
+Source="quetest1.cdb"
+
+[Generated Files]
+Source="quetest1cfg.cmd"
+Source="quetest1cfg.s62"
+Source="quetest1cfg_c.c"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -o3 -fr".\Debug" -mv6700
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr".\Release" -mv6700
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-c -o".\Debug\quetest1.out" -x
+
+["Linker" Settings: "Release"]
+Options=-c -o".\Release\quetest1.out" -x
+

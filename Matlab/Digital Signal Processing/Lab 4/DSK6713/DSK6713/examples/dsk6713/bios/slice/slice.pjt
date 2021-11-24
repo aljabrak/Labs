@@ -1,0 +1,41 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="slice"
+ProjectDir="$(Install_dir)\examples\dsk6713\bios\slice\"
+ProjectType=Executable
+CPUFamily=TMS320C67XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="slice.c"
+Source="slice.cdb"
+
+[Generated Files]
+Source="slicecfg.cmd"
+Source="slicecfg.s62"
+Source="slicecfg_c.c"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -o3 -fr".\Debug" -mv6700
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr".\Release" -mv6700
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-c -o".\Debug\slice.out" -x
+
+["Linker" Settings: "Release"]
+Options=-c -o".\Release\slice.out" -x
+
