@@ -1,0 +1,18 @@
+
+// GEL Function to Initalize Memory Map
+
+StartUp()
+{
+  // Enable memory map 
+  GEL_MapOn();
+
+  // Clear any previous memory map definitions 
+  GEL_MapReset();
+
+  // Define two memory ranges, and specify
+  // read/write permissions
+  // see Code Composer docs for function
+  // signatures 
+  GEL_MapAdd(0, 0, 0xF000, 1, 1);
+  GEL_MapAdd(0, 1, 0xF000, 1, 1);
+}

@@ -1,0 +1,13 @@
+
+menuitem "Gel"
+
+dialog NoiseDia(volParm "Noise Level")
+{
+	g_ModemData.noiseLevel = volParm;
+}
+
+slider Noise(0, 10 ,1, 1, volParm)
+{
+	g_ModemData.noiseLevel = volParm;
+}
+

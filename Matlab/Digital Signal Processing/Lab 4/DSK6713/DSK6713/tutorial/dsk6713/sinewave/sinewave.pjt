@@ -1,0 +1,26 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="sinewave"
+ProjectDir="$(Install_dir)\tutorial\dsk6711\sinewave\"
+ProjectType=Executable
+CPUFamily=TMS320C62XX
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+
+[Source Files]
+Source="$(Install_dir)\c6000\cgtools\lib\rts6700.lib"
+Source="sine.c"
+Source="sinewave.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -as -fr".\Debug\"
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-c -heap0x400 -o".\Debug\sinewave.out" -stack0x400 -x
+

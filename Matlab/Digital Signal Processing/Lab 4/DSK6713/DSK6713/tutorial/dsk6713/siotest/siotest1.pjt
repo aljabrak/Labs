@@ -1,0 +1,41 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="siotest1"
+ProjectDir="C:\CCS\V310\CCStudio\boards\dsk6713\CCStudio\tutorial\dsk6713\siotest\"
+ProjectType=Executable
+CPUFamily=TMS320C67XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="siotest1.c"
+Source="siotest1.cdb"
+
+[Generated Files]
+Source="siotest1cfg.cmd"
+Source="siotest1cfg.s62"
+Source="siotest1cfg_c.c"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -o3 -fr".\Debug" -mv6700
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr".\Release" -mv6700
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-c -o".\Debug\siotest1.out" -x
+
+["Linker" Settings: "Release"]
+Options=-c -o".\Release\siotest1.out" -x
+
