@@ -1,0 +1,40 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="tone"
+ProjectDir="$(Install_dir)\examples\dsk6713\bsl\tone\"
+ProjectType=Executable
+CPUFamily=TMS320C67XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="tone.c"
+Source="tone.cdb"
+
+[Generated Files]
+Source="tonecfg.cmd"
+Source="tonecfg.s62"
+Source="tonecfg_c.c"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr".\Debug" -i"." -i"$(Install_dir)\c6000\dsk6713\include" -d"_DEBUG" -d"CHIP_6713" -ml3 -mv6710
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr".\Release" -i"." -i"$(Install_dir)\c6000\dsk6713\include" -d"CHIP_6713" -ml3 -mv6710
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-q -c -o".\Debug\tone.out" -x -i"$(Install_dir)\c6000\dsk6713\lib" -l"dsk6713bsl.lib"
+
+["Linker" Settings: "Release"]
+Options=-q -c -o".\Release\tone.out" -x -i"$(Install_dir)\c6000\dsk6713\lib" -l"dsk6713bsl.lib"

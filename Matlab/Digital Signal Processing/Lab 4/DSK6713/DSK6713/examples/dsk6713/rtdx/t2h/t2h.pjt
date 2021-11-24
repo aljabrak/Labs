@@ -1,0 +1,96 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="t2h"
+ProjectDir="$(Install_dir)\examples\dsk6713\rtdx\t2h\"
+ProjectType=Executable
+CPUFamily=TMS320C67XX
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="HS_Debug"
+Config="HS_Release"
+Config="Release"
+
+[Source Files]
+Source="$(Install_dir)\c6000\cgtools\lib\rts6700.lib"
+Source="$(Install_dir)\c6000\rtdx\lib\rtdx.lib"
+Source="$(Install_dir)\c6000\rtdx\lib\rtdxhs.lib"
+Source="..\shared\intvecs.asm"
+Source="t2h.c"
+Source="..\shared\c6713dsk.cmd"
+
+["Debug" Settings]
+InitialBuildCmd=IF NOT EXIST Debug MKDIR Debug
+
+["HS_Debug" Settings]
+InitialBuildCmd=IF NOT EXIST HS_Debug MKDIR HS_Debug
+
+["HS_Release" Settings]
+InitialBuildCmd=IF NOT EXIST HS_Release MKDIR HS_Release
+
+["Release" Settings]
+InitialBuildCmd=IF NOT EXIST Release MKDIR Release
+
+["Compiler" Settings: "Debug"]
+Options=-g -fr".\Debug" -i"..\shared" -d"_DEBUG" -ml3
+
+["Compiler" Settings: "HS_Debug"]
+Options=-g -fr".\HS_Debug" -i"..\shared" -d"_DEBUG" -d"HSRTDX" -ml3
+
+["Compiler" Settings: "HS_Release"]
+Options=-o3 -fr".\HS_Release" -i"..\shared" -d"NDEBUG" -d"HSRTDX" -ml3
+
+["Compiler" Settings: "Release"]
+Options=-o3 -fr".\Release" -i"..\shared" -d"NDEBUG" -ml3
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "HS_Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "HS_Release"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\t2h.map" -o".\Debug\t2h.out" -w -x
+
+["Linker" Settings: "HS_Debug"]
+Options=-c -m".\HS_Debug\t2h.map" -o".\HS_Debug\t2h.out" -w -x
+
+["Linker" Settings: "HS_Release"]
+Options=-c -m".\HS_Release\t2h.map" -o".\HS_Release\t2h.out" -w -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\t2h.map" -o".\Release\t2h.out" -w -x
+
+["$(Install_dir)\c6000\cgtools\lib\rts6700.lib" Settings: "HS_Debug"]
+LinkOrder=6
+
+["$(Install_dir)\c6000\rtdx\lib\rtdx.lib" Settings: "HS_Debug"]
+ExcludeFromBuild=true
+LinkOrder=4
+
+["$(Install_dir)\c6000\rtdx\lib\rtdx.lib" Settings: "HS_Release"]
+ExcludeFromBuild=true
+
+["$(Install_dir)\c6000\rtdx\lib\rtdxhs.lib" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["$(Install_dir)\c6000\rtdx\lib\rtdxhs.lib" Settings: "HS_Debug"]
+LinkOrder=5
+
+["$(Install_dir)\c6000\rtdx\lib\rtdxhs.lib" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\shared\intvecs.asm" Settings: "HS_Debug"]
+LinkOrder=2
+
+["t2h.c" Settings: "HS_Debug"]
+LinkOrder=1
+

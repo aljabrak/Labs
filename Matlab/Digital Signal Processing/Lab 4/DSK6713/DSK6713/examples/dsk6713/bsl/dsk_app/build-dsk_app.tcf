@@ -1,0 +1,58 @@
+/*
+ *  ======== dsk_app.tcf ========
+ *
+ *! Revision History
+ *! ================
+ *! 12-Dec-2003 mw Shortened tconf path
+ *! 18-Feb-2003 mw Created
+ *
+ * To create ledprd.cdb, run Dosrun.bat in your Code Composer install directory
+ * then go to the example directory and type the following at the command line:
+ *
+ *    tconf build-dsk_app.tcf
+ * 
+ */
+
+/* Load 6713 DSK platform */
+utils.loadPlatform("Dsk6713");
+
+/* Get program objects */
+utils.getProgObjs(prog);
+
+/* Set CPU frequency to 225MHz */
+GBL.CLKOUT = 225.0000;
+
+/* Enable all heaps, RTDX, Real Time Analysis, and the Task Mangager */
+bios.enableFullBios(prog);
+
+/* Disable Task Manager */
+TSK.ENABLETSK = 0;
+
+/* Enable RTDX */
+RTDX.ENABLERTDX = 1;
+HST.HOSTLINKTYPE = "RTDX";
+
+/* Add processBuffer SWI */
+processBufferSwi = SWI.create("processBufferSwi");
+processBufferSwi.fxn = prog.extern("processBuffer");
+processBufferSwi.priority = 2;
+
+/* Insert edmaHwi ISR */
+HWI_INT8.interruptSource = EDMA_Controller;
+HWI_INT8.fxn = prog.extern("edmaHwi");
+HWI_INT8.useDispatcher = 1;
+
+/* Define the PRD blinkLed */
+var blinkLED = PRD.create("PRD_blinkLED");
+blinkLED.comment = "Toggles LED #0 every 500ms";
+blinkLED.fxn = prog.extern("blinkLED");
+blinkLED.period = 500;
+
+/* Define the PRD load */
+var load = PRD.create("PRD_load");
+load.comment = "Dummy Load";
+load.fxn = prog.extern("load");
+load.period = 10;
+
+/* Generate .cdb file */
+prog.gen("dsk_app.cdb");

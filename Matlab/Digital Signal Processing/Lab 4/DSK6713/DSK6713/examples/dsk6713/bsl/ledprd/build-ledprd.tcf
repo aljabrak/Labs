@@ -1,0 +1,38 @@
+/*
+ *  ======== ledprd.tcf ========
+ *
+ *! Revision History
+ *! ================
+ *! 12-Dec-2003 mw Shortened tconf path
+ *! 28-Jan-2003 mw Created
+ *
+ * To create ledprd.cdb, run Dosrun.bat in your Code Composer install directory
+ * then go to the example directory and type the following at the command line:
+ *
+ *    tconf build-ledprd.tcf
+ * 
+ */
+
+/* Load 6713 DSK platform */
+utils.loadPlatform("Dsk6713");
+
+/* Get program objects */
+utils.getProgObjs(prog);
+
+/* Set CPU frequency to 225MHz */
+GBL.CLKOUT = 225.0000;
+
+/* Enable all heaps, RTDX, Real Time Analysis, and the Task Mangager */
+bios.enableFullBios(prog);
+
+/* Disable Task Manager */
+TSK.ENABLETSK = 0;
+
+/* Define the PRD blinkLED0 */
+var blinkLED = PRD.create("PRD_blinkLED0");
+blinkLED.comment = "Toggles LED #0 every 200ms";
+blinkLED.fxn = prog.extern("blinkLED0");
+blinkLED.period = 200;
+
+/* Generate .cdb file */
+prog.gen("ledprd.cdb");

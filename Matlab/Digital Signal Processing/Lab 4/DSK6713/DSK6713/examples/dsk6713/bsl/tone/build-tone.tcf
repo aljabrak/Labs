@@ -1,0 +1,32 @@
+/*
+ *  ======== tone.tcf ========
+ *
+ *! Revision History
+ *! ================
+ *! 12-Dec-2003 mw Shortened tconf path
+ *! 28-Jan-2003 mw Created
+ *
+ * To create tone.cdb, run Dosrun.bat in your Code Composer install directory
+ * then go to the example directory and type the following at the command line:
+ *
+ *    tconf build-tone.tcf
+ * 
+ */
+
+/* Load 6713 DSK platform */
+utils.loadPlatform("Dsk6713");
+
+/* Get program objects */
+utils.getProgObjs(prog);
+
+/* Set CPU frequency to 225MHz */
+GBL.CLKOUT = 225.0000;
+
+/* Enable all heaps, RTDX, Real Time Analysis, and the Task Mangager */
+bios.enableFullBios(prog);
+
+/* Disable Task Manager */
+TSK.ENABLETSK = 0;
+
+/* Generate .cdb file */
+prog.gen("tone.cdb");

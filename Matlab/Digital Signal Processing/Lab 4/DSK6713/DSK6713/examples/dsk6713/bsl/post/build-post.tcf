@@ -1,0 +1,38 @@
+/*
+ *  ======== post.tcf ========
+ *
+ *! Revision History
+ *! ================
+ *! 12-Dec-2003 mw Shortened tconf path
+ *! 28-Jan-2003 mw Created
+ *
+ * To create post.cdb, run Dosrun.bat in your Code Composer install directory
+ * then go to the example directory and type the following at the command line:
+ *
+ *    tconf build-post.tcf
+ * 
+ */
+
+/* Load 6713 DSK platform */
+utils.loadPlatform("Dsk6713");
+
+/* Get program objects */
+utils.getProgObjs(prog);
+
+/* Set CPU frequency to 225MHz */
+GBL.CLKOUT = 225.0000;
+
+/* Insert BOOT memory section and adjust ISRAM */
+IRAM.len = 0x0002fb00;
+IRAM.base = 0x00000400;
+BOOT = MEM.create("BOOT");
+BOOT.len = 0x00000400;
+BOOT.base = 0x00000000;
+
+/* Insert timer ISR */
+HWI_INT15.interruptSource = Timer_1;
+HWI_INT15.fxn = prog.extern("sleepIsr");
+HWI_INT15.useDispatcher = 1;
+
+/* Generate .cdb file */
+prog.gen("post");

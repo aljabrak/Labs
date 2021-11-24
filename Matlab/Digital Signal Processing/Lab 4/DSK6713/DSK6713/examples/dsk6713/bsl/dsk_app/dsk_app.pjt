@@ -1,0 +1,41 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="dsk_app"
+ProjectDir="$(Install_dir)\examples\dsk6713\bsl\dsk_app\"
+ProjectType=Executable
+CPUFamily=TMS320C67XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="aic23.c"
+Source="dsk_app.c"
+Source="dsk_app.cdb"
+
+[Generated Files]
+Source="dsk_appcfg.cmd"
+Source="dsk_appcfg.s62"
+Source="dsk_appcfg_c.c"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr".\Debug" -i"." -i"$(Install_dir)\c6000\dsk6713\include" -d"_DEBUG" -d"CHIP_6713" -ml3 -mv6710
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr".\Release" -i"." -i"$(Install_dir)\c6000\dsk6713\include" -d"CHIP_6713" -ml3 -mv6710
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-q -c -o".\Debug\dsk_app.out" -x -i"$(Install_dir)\c6000\dsk6713\lib" -l"dsk6713bsl.lib"
+
+["Linker" Settings: "Release"]
+Options=-q -c -o".\Release\dsk_app.out" -x -i"$(Install_dir)\c6000\dsk6713\lib" -l"dsk6713bsl.lib"
