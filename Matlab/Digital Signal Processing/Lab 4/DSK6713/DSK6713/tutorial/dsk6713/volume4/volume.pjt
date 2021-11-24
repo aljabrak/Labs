@@ -1,0 +1,42 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="volume"
+ProjectDir="$(Install_dir)tutorial\dsk6713\volume4\"
+ProjectType=Executable
+CPUFamily=TMS320C67XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="load.asm"
+Source="volume.c"
+Source="volume.cdb"
+
+[Generated Files]
+Source="volumecfg.cmd"
+Source="volumecfg.s62"
+Source="volumecfg_c.c"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -o3 -fr".\Debug" -d"_DSK6713_" -mv6700
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr".\Release" -d"_DSK6713_" -mv6700
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-c -o".\Debug\volume.out" -x
+
+["Linker" Settings: "Release"]
+Options=-c -o".\Release\volume.out" -x
+

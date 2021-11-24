@@ -1,0 +1,41 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="tsktest"
+ProjectDir="$(Install_dir)\tutorial\dsk6713\tsktest\"
+ProjectType=Executable
+CPUFamily=TMS320C67XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="tsktest.c"
+Source="tsktest.cdb"
+
+[Generated Files]
+Source="tsktestcfg.cmd"
+Source="tsktestcfg.s62"
+Source="tsktestcfg_c.c"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -o3 -fr".\Debug" -mv6700
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr".\Release" -mv6700
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-c -o".\Debug\tsktest.out" -x
+
+["Linker" Settings: "Release"]
+Options=-c -o".\Release\tsktest.out" -x
+
