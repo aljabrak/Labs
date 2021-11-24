@@ -1,0 +1,36 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="tsk_audio"
+ProjectDir="$(Install_dir)\examples\dsk6713\bios\audio\"
+ProjectType=Executable
+CPUFamily=TMS320C67XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+
+[Source Files]
+Source="dsk6713_codec_devParams.c"
+Source="tsk_audio.c"
+Source="tsk_audio.cdb"
+Source="tsk_audio.cmd"
+
+[Generated Files]
+Source="tsk_audiocfg.cmd"
+Source="tsk_audiocfg.s62"
+Source="tsk_audiocfg_c.c"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -eoo67 -fr".\Debug" -i"." -d"CHIP_6713" -mv6710
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v67
+
+["Linker" Settings: "Debug"]
+Options=-q -c -o"$(Proj_dir)\Debug\tsk_audio.out" -x -i"."
+
+["tsk_audiocfg.cmd" Settings: "Debug"]
+ExcludeFromBuild=true
+
