@@ -1,0 +1,413 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Release note for C55x CSL</title>
+<style>
+<!--
+div.Section1
+	{page:Section1;}
+li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+span.EmailStyle15
+	{color:black}
+-->
+</style>
+</head>
+
+<body>
+
+<h1 align="center">Release note for C6000 CSL</h1>
+<blockquote>
+  <blockquote>
+    <ol>
+      <li>
+        <h3>Introduction</h3>
+      </li>
+      <li>
+        <h3>Directory structure</h3>
+      </li>
+      <li>
+        <h3>Setting up build environment to use CSL</h3>
+      </li>
+      <li>
+        <h3>Using CSL examples</h3>
+      </li>
+      <li>
+        <h3>Unarchive the sources</h3>
+      </li>
+      <li>
+        <h3> Bugs fixed</h3>
+      </li>
+    </ol>
+        <p> &nbsp;</p>
+  </blockquote>
+</blockquote>
+<ol>
+  <li>
+    <h4>Introduction</h4>
+  </li>
+</ol>
+<blockquote>
+  <p><font face="Verdana" size="2">This is the release note for C6000 CSL version
+  2.31.00.8. This release provides chip support libraries for C6201, C6202,
+  C6203, C6204, C6205, C6211, C6410, C6411, C6412, C6413, C6414, C6415, C6416, 
+  C6418, C6701, C6711,
+  C6711C, C6712, C6712C, C6713, DA610, DM642, DM641 and DM640 devices. All the libraries are built using Codegen tools
+  v4.32 with
+  options -mo -al -k -qq -o3 -ml3 . User
+  documentation for C6000 CSL can be found in &quot;TMS320C6000 Chip Support
+  Library API Reference Guide&quot; (spru401).</font></p>
+</blockquote>
+<ol start="2">
+  <li>
+    <h4>Directory structure</h4>
+  </li>
+</ol>
+<blockquote>
+  <p><font face="Verdana" size="2">include&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  - This directory contains CSL headers. (e.g. csl_dma.h, csl_mcbsp.h etc.)</font></p>
+  <p><font face="Verdana" size="2">lib&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  - This directory contains CSL libraries (e.g. csl6201.lib, csl6201e.lib etc.)
+  and&nbsp;</font></p>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <p><font face="Verdana" size="2">&nbsp; archives CSL sources in
+        (csl6000.src)</font></p>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+        <p><font face="Verdana" size="2">examples&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        - This directory contains CSL examples for evm6201, dsk6211 , dsk6711 ,
+        dsk6713 and evmDM642.</font></p>
+</blockquote>
+<ol start="3">
+  <li>
+    <h4>Setting up build environment to use CSL</h4>
+  </li>
+</ol>
+<blockquote>
+  <ul>
+    <li><i>In CCS based build environment</i>:</li>
+  </ul>
+  <blockquote>
+    <p><font face="Verdana" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Assuming CSL is installed at </font><font face="Courier New">&lt;User_Install_Dir&gt;</font><font size="2" face="Courier New">
+        </font><font face="Verdana" size="2">, all the existing CCS project
+        files need to add :</font></p>
+    <blockquote>
+      <blockquote>
+        <p><font face="Courier New">-i&quot;&lt;User_Install_Dir&gt;\include&quot;</font><font face="Verdana" size="2">
+        in compiler options and</font></p>
+        <p><font face="Courier New">-l&quot;&lt;User_Install_Dir&gt;\lib&quot;</font><font size="2" face="Courier New">
+        </font><font face="Verdana" size="2">in linker options</font></p>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+  <ul>
+    <li><i>In Non-CCS based build environment</i>:</li>
+  </ul>
+  <blockquote>
+    <blockquote>
+      <p><font face="Verdana" size="2">Assuming </font><font face="Courier New">&lt;User_Install_Dir&gt;</font><font face="Verdana" size="2">
+      is the directory of CSL installation, all makefiles used to build the
+      application need to add:</font></p>
+      <blockquote>
+        <p><font face="Courier New">-i&quot;&lt;User_Install_Dir&gt;\include&quot;</font><font face="Verdana" size="2">
+        in compiler options and</font></p>
+        <p><font face="Courier New">-l&quot;&lt;User_Install_Dir&gt;\lib&quot;</font><font face="Verdana" size="2">
+        in linker options</font></p>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<ol start="4">
+  <li>
+    <h4>Using CSL examples</h4>
+  </li>
+</ol>
+<blockquote>
+  <p><font face="Verdana" size="2">The CSL examples provided with this release
+  use CSL headers and libraries from CCS installation by default. In order to
+  build the examples using latest CSL in this release, please refer point 3
+  above.</font></p>
+</blockquote>
+<ol start="5">
+  <li>
+    <h4>Unarchive the sources</h4>
+  </li>
+</ol>
+<blockquote>
+  <p><font face="Verdana" size="2">All CSL sources (header files, c files and
+  asm files) can be unarchived using following command:</font></p>
+  <p><font face="Courier New">ar6x x csl6000.src</font></p>
+</blockquote>
+<ol start="6">
+  <li>
+    <h4>Bugs fixed</h4>
+  </li>
+</ol>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">
+    <font size="2" face="Verdana">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    SDSsq38280 - Typo in csl_vphal.h &nbsp;(definition error in VP – VDIMGOFF address 
+    register macros) </font><br>
+    <font face="Arial" color="black" size="2">
+    <span style="font-size: 10pt; font-family: Verdana">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    SDSsq37840 - Problem with tccAllocTable definition in 6x csl_edma.h file</span></font><font face="Verdana" size="2">
+    </font></p>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;</p>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">
+    <font face="Verdana" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Enhancements<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    --------------<br>
+    &nbsp;</font></p>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">
+    <font face="Verdana" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * 
+    Included chip support library for C6418.</font></p>
+    <h4 style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;</h4>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;</p>
+    <h4 style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <u>Bugs fixed and enhancements made in previous release</u></h4>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0"><br>
+    <font face="Verdana" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Enhancements<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    --------------<br>
+    &nbsp;</font></p>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">
+    <font face="Verdana" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    * Included chip support libraries for DM641 and&nbsp; DM640&nbsp; devices</font></p>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;</p>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0"><font face="Verdana" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *
+    Fixed BIOS-CSL dependency bug. This version of CSL has a fix for incorrect 
+    TIMER0 initialization during BIOS initialization. </font></p>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">
+    <font face="Verdana" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></p>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">
+    <font face="Verdana" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This CSL version fixes this bug for all 
+    BIOS versions.</font></p>
+
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font face="Verdana" size="2">* CSL has been updated for VP module as per the latest documentation,SPRU629a.pdf&nbsp;</font><br>
+</p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;
+</p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+a) <font face="Verdana" size="2"><span style="letter-spacing: 0"> VP module changes (Field names):-</span></font></p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">
+<font face="Verdana" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+VCTxP field in VPCTL register.</font></p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">
+<font face="Verdana" size="2">&nbsp;</font></p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">
+<font face="Verdana" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<u>old name</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>new name</u></font></p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">
+<font face="Verdana" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+VCT3P&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VCT2P</font></p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">
+<font face="Verdana" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+VCT2P&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VCT1P</font></p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">
+<font face="Verdana" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+VCT1P&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VCT0P</font></p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Verdana" size="2"><span style="letter-spacing: 0">
+VCTLxS&nbsp; field in VDCTL register,</span></font></p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Verdana" size="2">&nbsp;
+<u>old name</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>new name</u></font></p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font face="Verdana" size="2"><span style="letter-spacing: 0">VCTL3S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VCTL2S<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VCTL2S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VCTL1S<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VCTL1S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VCTL0S<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0"><font face="Verdana" size="2"><span style="letter-spacing: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+b) VP module changes ( symbolic constants) :-</span></font><br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Verdana" size="2"><span style="letter-spacing: 0">
+<u>old name</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<u>new name</u>&nbsp;</span></font>
+</p>
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp; </p>
+
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font face="Verdana" size="2"><span style="letter-spacing: 0">
+PFUNC:</span></font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font face="Verdana" size="2"><span style="letter-spacing: 0">VP_PFUNC_PFUNC20_VCTL1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PFUNC_PFUNC20_VCTL0&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PFUNC_PFUNC21_VCTL2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PFUNC_PFUNC21_VCTL1&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PFUNC_PFUNC22_VCTL3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PFUNC_PFUNC22_VCTL2</span></font> </p>
+
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp; </p>
+
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font face="Verdana" size="2"><span style="letter-spacing: 0">PDIR:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDIR_PDIR22_VCTL3IN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PDIR_PDIR22_VCTL2IN&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDIR_PDIR22_VCTL3OUT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PDIR_PDIR22_VCTL2OUT&nbsp;<br>
+</span></font> </p>
+
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0"><font face="Verdana" size="2"><span style="letter-spacing: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDIR_PDIR21_VCTL2IN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PDIR_PDIR21_VCTL1IN<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDIR_PDIR21_VCTL2OUT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PDIR_PDIR21_VCTL1OUT<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDIR_PDIR20_VCTL1IN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PDIR_PDIR20_VCTL0IN<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDIR_PDIR20_VCTL1OUT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PDIR_PDIR20_VCTL0OUT</span></font> </p>
+
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp; </p>
+
+<p style="line-height: 100%; margin-top: 0; margin-bottom: 0"><font face="Verdana" size="2"><span style="letter-spacing: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PDIN:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDIN_PDIN22_VCTL3LO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PDIN_PDIN22_VCTL2LO<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDIN_PDIN22_VCTL3HI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PDIN_PDIN22_VCTL2HI<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDIN_PDIN21_VCTL2LO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PDIN_PDIN21_VCTL1LO<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDIN_PDIN21_VCTL2HI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PDIN_PDIN21_VCTL1HI<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDIN_PDIN20_VCTL1LO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PDIN_PDIN20_VCTL0LO<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDIN_PDIN20_VCTL1HI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PDIN_PDIN20_VCTL0HI<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PDOUT:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDOUT_PDOUT22_VCTL3LO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PDOUT_PDOUT22_VCTL2LO<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDOUT_PDOUT22_VCTL3HI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PDOUT_PDOUT22_VCTL2HI<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDOUT_PDOUT21_VCTL2LO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PDOUT_PDOUT21_VCTL1LO<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDOUT_PDOUT21_VCTL2HI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PDOUT_PDOUT21_VCTL1HI<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDOUT_PDOUT20_VCTL1LO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PDOUT_PDOUT20_VCTL0LO<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDOUT_PDOUT20_VCTL1HI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PDOUT_PDOUT20_VCTL0HI<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PDSET:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDSET_PDSET22_VCTL3HI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PDSET_PDSET22_VCTL2HI<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDSET_PDSET21_VCTL2HI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PDSET_PDSET21_VCTL1HI<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDSET_PDSET20_VCTL1HI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PDSET_PDSET20_VCTL0HI<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PDCLR:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDCLR_PDCLR22_VCTL3CLR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PDCLR_PDCLR22_VCTL2CLR<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDCLR_PDCLR21_VCTL2CLR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PDCLR_PDCLR21_VCTL1CLR<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PDCLR_PDCLR20_VCTL1CLR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PDCLR_PDCLR20_VCTL0CLR<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PIEN:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PIEN_PIEN22_VCTL3LO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PIEN_PIEN22_VCTL2LO<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PIEN_PIEN22_VCTL3HI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PIEN_PIEN22_VCTL2HI<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PIEN_PIEN21_VCTL2LO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PIEN_PIEN21_VCTL1LO<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PIEN_PIEN21_VCTL2HI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PIEN_PIEN21_VCTL1HI<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PIEN_PIEN20_VCTL1LO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PIEN_PIEN20_VCTL0LO<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PIEN_PIEN20_VCTL1HI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_PIEN_PIEN20_VCTL0HI<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PIPOL:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PIPOL_PIPOL22_VCTL3ACTHI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PIPOL_PIPOL22_VCTL2ACTHI<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PIPOL_PIPOL22_VCTL3ACTLO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PIPOL_PIPOL22_VCTL2ACTLO<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PIPOL_PIPOL21_VCTL2ACTHI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PIPOL_PIPOL21_VCTL1ACTHI<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PIPOL_PIPOL21_VCTL2ACTLO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PIPOL_PIPOL21_VCTL1ACTLO<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PIPOL_PIPOL20_VCTL1ACTHI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PIPOL_PIPOL20_VCTL0ACTHI<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PIPOL_PIPOL20_VCTL1ACTLO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PIPOL_PIPOL20_VCTL0ACTLO<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PISTAT:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PISTAT_PISTAT22_VCTL3INT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PISTAT_PISTAT22_VCTL2INT<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PISTAT_PISTAT21_VCTL2INT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PISTAT_PISTAT21_VCTL1INT<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PISTAT_PISTAT20_VCTL1INT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VP_PISTAT_PISTAT20_VCTL0INT<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PICLR:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PICLR_PICLR22_VCTL3CLR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PICLR_PICLR22_VCTL2CLR<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PICLR_PICLR21_VCTL2CLR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PICLR_PICLR21_VCTL1CLR<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PICLR_PICLR20_VCTL1CLR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_PICLR_PICLR20_VCTL0CLR<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VDCTL:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_VDCTL_VCTL3S_CBLNK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_VDCTL_VCTL2S_CBLNK&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_VDCTL_VCTL3S_FLD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_VDCTL_VCTL2S_FLD&nbsp;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_VDCTL_VCTL2S_VYSYNC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_VDCTL_VCTL1S_VYSYNC<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_VDCTL_VCTL2S_VBLNK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_VDCTL_VCTL1S_VBLNK&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_VDCTL_VCTL2S_CSYNC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_VDCTL_VCTL1S_CSYNC&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_VDCTL_VCTL2S_FLD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_VDCTL_VCTL1S_FLD&nbsp;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_VDCTL_VCTL1S_HYSYNC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_VDCTL_VCTL0S_HYSYNC<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_VDCTL_VCTL1S_HBLNK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_VDCTL_VCTL0S_HBLNK&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_VDCTL_VCTL1S_AVID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_VDCTL_VCTL0S_AVID&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VP_VDCTL_VCTL1S_FLD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VP_VDCTL_VCTL0S_FLD</span></font> </p>
+
+</body>
+
+</html>
