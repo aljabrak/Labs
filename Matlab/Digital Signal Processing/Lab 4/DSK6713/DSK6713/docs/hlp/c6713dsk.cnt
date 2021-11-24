@@ -1,0 +1,143 @@
+:Base c6713dsk.hlp
+1 TMS320C6713 DSK
+2 Welcome to Your 'C6713 DSK
+3 Package Contents and Installation=Package_Contents_and_Installation
+3 C6713DSK Tutorial=C6713_DSK_Tutorial
+3 Key Features=Key_Features
+3 DSK Specific Files=DSK_Specific_Files
+2 DSK Version History
+3 DSK Versions=DSK_Versions
+2 Hardware
+3 Hardware Overview=Hardware_Overview
+3 C6713 DSK Board Description=Board_Description
+3 Configuration Switches=Configuration_Switches
+3 TMS320C6713 DSP
+4 DSP Overview=DSP_Overview
+4 PLL Settings=PLL_Settings
+4 Memory Overview=Memory_Overview
+3 On-Board External Memory
+4 External Memory Overview=External_Memory_Overview
+4 SDRAM=SDRAM
+4 Flash Memory=Flash_Memory
+3 Programmable Logic (CPLD)
+4 CPLD Overview=CPLD_Overview
+4 CPLD USER_REG Register=CPLD_USER_REG_Register
+4 CPLD DC_REG Register=CPLD_DC_REG_Register
+4 CPLD VERSION Register=CPLD_VERSION_Register
+4 CPLD MISC  Register=CPLD_MISC_Register
+3 AIC23 Stereo Codec
+4 Codec Overview=CODEC_Overview
+4 Codec Control Channel=Codec_Control
+4 Codec Data Channel=Codec_Data
+4 Codec Registers=CODEC_Registers
+4 Audio Connectors=Audio_Connectors
+3 LEDs and DIP Switches
+4 LED Indicators=LED_Indicators
+4 DIP Switches=DIP_Switches
+3 JTAG Emulation
+4 JTAG Emulation Overview=JTAG_Emulation
+4 Embedded USB Emulator=JTAG_Embedded
+4 External JTAG Header=JTAG_External
+3 Expansion Interfaces
+4 Expansion Interface Overview=Expansion_Interface_Overview
+4 Expansion Memory Interface=Expansion_Memory_Interface
+4 Expansion Peripheral Interface=Expansion_Peripheral_Interface
+4 Expansion Host Port Interface=Expansion_Host_Port_Interface
+3 Power Supply
+4 Power Supply Overview=Power_Supply_Overview
+4 External Power Connector=External_Power_Connector
+2 Software
+3 Software Overview=Software_Overview
+3 Intro to DSP/BIOS on the DSK
+4 DSP/BIOS Overview=Intro_BIOS
+4 DSP/BIOS Project Components=Intro_Components
+4 Managing CDB Files and Projects=Intro_CDB
+4 Program Flow=Intro_Flow
+3 Board Support Library
+4 BSL Overview=BSL_Overview
+4 BSL API Reference
+5 BSL API Index=BSL_API_Index
+5 Board Setup API
+6 Board Setup API Summary=Board_Setup_API_Summary
+6 DSK6713_init=DSK6713_init
+6 DSK6713_rget()=DSK6713_rget
+6 DSK6713_rset()=DSK6713_rset
+6 DSK6713_version()=DSK6713_version
+6 DSK6713_wait()=DSK6713_wait
+6 DSK6713_waitusec()=DSK6713_waitusec
+5 Codec API
+6 Codec API Summary=Codec_API_Summary
+6 DSK6713_AIC23_openCodec()=DSK6713_AIC23_openCodec
+6 DSK6713_AIC23_closeCodec()=DSK6713_AIC23_closeCodec
+6 DSK6713_AIC23_config()=DSK6713_AIC23_config
+6 DSK6713_AIC23_read()=DSK6713_AIC23_read
+6 DSK6713_AIC23_write()=DSK6713_AIC23_write
+6 DSK6713_AIC23_powerDown()=DSK6713_AIC23_powerDown
+6 DSK6713_AIC23_setFreq()=DSK6713_AIC23_setFreq
+6 DSK6713_AIC23_mute()=DSK6713_AIC23_mute
+6 DSK6713_AIC23_loopback()=DSK6713_AIC23_loopback
+6 DSK6713_AIC23_outGain()=DSK6713_AIC23_outGain
+6 DSK6713_AIC23_rget()=DSK6713_AIC23_rget
+6 DSK6713_AIC23_rset()=DSK6713_AIC23_rset
+5 DIP Switch API
+6 DIP Switch API Summary=DIP_Switch_API_Summary
+6 DSK6713_DIP_init()=DSK6713_DIP_init
+6 DSK6713_DIP_get()=DSK6713_DIP_get
+5 LED API
+6 LED API Summary=LED_API_Summary
+6 DSK6713_LED_init()=DSK6713_LED_init
+6 DSK6713_LED_off()=DSK6713_LED_off
+6 DSK6713_LED_on()=DSK6713_LED_on
+6 DSK6713_LED_toggle()=DSK6713_LED_toggle
+5 FLASH API
+6 FLASH API Summary=FLASH_API_Summary
+6 DSK6713_FLASH_checksum()=DSK6713_FLASH_checksum
+6 DSK6713_FLASH_erase()=DSK6713_FLASH_erase
+6 DSK6713_FLASH_read()=DSK6713_FLASH_read
+6 DSK6713_FLASH_write()=DSK6713_FLASH_write
+3 Examples
+4 Examples Overview=Examples_Overview
+4 LED Example
+5 LED Example Description=LED_Example
+4 LEDPRD Example
+5 LEDPRD Example Description=LEDPRD_Example
+4 Tone Example
+5 Tone Example Description=Tone_Example
+4 DSK_App Example
+5 DSK_App Example Description=DSK_App_Example
+5 Running the DSK_App Example=DSK_App_Running
+5 DSK_App Data Transfer=DSK_App_Data_Transfer
+5 DSK_App Program Flow=DSK_App_Program_Flow
+4 BIOS Device Driver Demo
+5 Device Driver Demos=Device_Driver_Demos
+5 Running the Device Driver Demos=Device_Driver_Running
+3 Power On Self Test
+4 POST Overview=POST_Overview
+4 POST Test Descriptions=POST_Test_Descriptions
+3 Diagnostic Utility
+4 Diagnostic Utility Overview=Diagnostic_Utility_Overview
+4 General Diagnostic Tests=General_Diagnostic_Tests
+4 Advanced Diagnostic Tests=Advanced_Diagnostic_Tests
+4 Codec Diagnostic=Codec_Diagnostic
+4 Memory Diagnostic=Memory_Diagnostic
+4 DSP Diagnostic=DSP_Diagnostic
+4 LED/Switch Diagnostic=LED_Switch_Diagnostic
+3 FlashBurn
+4 FlashBurn Utility Overview=Flash_Utility_Overview
+4 Programming the POST with FlashBurn=Programming_the_POST_with_FlashBurn
+4 6713 Boot Process=6713_Boot_Process
+4 Generating a Bootable Hex File=Generating_a_Bootable_Hex_File
+2 Documentation
+3 Schematics=Schematics
+3 Datasheets and DSK Docs=Datasheets
+3 Connector Index=Connector_Index
+2 Additional Information
+3 Web Links=Web_Links
+3 Acronyms=Acronyms
+3 Trademarks=Trademarks>trademrk
+3 Disclaimer=Disclaimer
+2 Troubleshooting and Support
+3 Product Registration=Product_Registration
+3 Troubleshooting=Troubleshooting_and_Support
+3 Error Messages=Troubleshooting_Error_Messages
+3 Where to Go for Support=Where_to_Go_for_Support
