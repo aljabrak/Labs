@@ -1,0 +1,50 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="dsk6713bslx"
+ProjectDir="$(Install_dir)\c6000\dsk6713\lib\dsk6713bsl\"
+ProjectType=Library
+CPUFamily=TMS320C67XX
+Tool="Archiver"
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="dsk6713.c"
+Source="dsk6713_aic23_closecodec.c"
+Source="dsk6713_aic23_loopback.c"
+Source="dsk6713_aic23_mute.c"
+Source="dsk6713_aic23_opencodec.c"
+Source="dsk6713_aic23_outgain.c"
+Source="dsk6713_aic23_powerdown.c"
+Source="dsk6713_aic23_read.c"
+Source="dsk6713_aic23_registers.c"
+Source="dsk6713_aic23_setfreq.c"
+Source="dsk6713_aic23_write.c"
+Source="dsk6713_dip.c"
+Source="dsk6713_flash_checksum.c"
+Source="dsk6713_flash_erase.c"
+Source="dsk6713_flash_read.c"
+Source="dsk6713_flash_write.c"
+Source="dsk6713_led.c"
+
+["Archiver" Settings: "Debug"]
+Options=-r -o.\Debug\dsk6713bsl.lib
+
+["Archiver" Settings: "Release"]
+Options=-r -o.\Release\dsk6713bsl.lib
+
+["Compiler" Settings: "Debug"]
+Options=-q -o1 -fr".\Debug" -i"..\..\include" -d"_DEBUG" -d"CHIP_6713" -mu -ml3 -ms2 -mv6710
+
+["Compiler" Settings: "Release"]
+Options=-g -q -fr".\Release" -i"..\..\include" -d"_DEBUG" -d"CHIP_6713" -ml3 -mv6400
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
