@@ -1,0 +1,30 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="timer1_useBios"
+ProjectDir="M:\integration_CSL\CSL\examples\c6000\evm6201\csl\timer\timer1_useBios\"
+ProjectType=Executable
+CPUFamily=TMS320C62XX
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+
+[Source Files]
+Source="main_timer1_useBios.c"
+Source="timer1_useBios.cdb"
+
+[Generated Files]
+Source="timer1_useBioscfg.cmd"
+Source="timer1_useBioscfg.s62"
+Source="timer1_useBioscfg_c.c"
+
+["Compiler" Settings: "Debug"]
+Options=-g -qq -as -d"CHIP_6201"
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-q -c -m".\Debug\timer1.map" -o".\Debug\timer1_useBios.out" -w -x -l"csl6201.lib"
+

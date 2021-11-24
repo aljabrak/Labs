@@ -1,0 +1,25 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="mcbsp1"
+ProjectDir=""
+ProjectType=Executable
+CPUFamily=TMS320C67XX
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+
+[Source Files]
+Source="main_mcbsp1.c"
+Source="mcbsp1.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -o3 -fr".\Debug" -d"CHIP_6713"
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-q -c -o".\Debug\mcbsp1.out" -x -l"csl6713.lib" -l"rts6700.lib"
+

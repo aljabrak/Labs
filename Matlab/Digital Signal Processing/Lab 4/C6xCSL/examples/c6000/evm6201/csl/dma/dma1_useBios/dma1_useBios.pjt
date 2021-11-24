@@ -1,0 +1,30 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="dma1_useBios"
+ProjectDir="M:\integration_CSL\CSL\examples\c6000\evm6201\csl\dma\dma1_useBios\"
+ProjectType=Executable
+CPUFamily=TMS320C62XX
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+
+[Source Files]
+Source="dma1_useBios.cdb"
+Source="main_dma1_useBios.c"
+
+[Generated Files]
+Source="dma1_useBioscfg.cmd"
+Source="dma1_useBioscfg.s62"
+Source="dma1_useBioscfg_c.c"
+
+["Compiler" Settings: "Debug"]
+Options=-g -qq -pds32 -as -d"CHIP_6201"
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-q -c -m"dma1.map" -o".\Debug\dma1_useBios.out" -w -x -l"csl6201.lib"
+
