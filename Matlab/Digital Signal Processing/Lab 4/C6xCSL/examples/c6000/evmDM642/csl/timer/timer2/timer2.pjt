@@ -1,0 +1,31 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="timer2"
+ProjectDir=""
+ProjectType=Executable
+CPUFamily=TMS320C64XX
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+
+[Source Files]
+Source="dotpV1_timer2.c"
+Source="dotpV2_timer2.c"
+Source="main_timer2.c"
+Source="profilerApi_timer2.c"
+Source="timer2.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -k -q -fr".\Debug" -fs".\Debug" -d"CHIP_DM642" -mv6400
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-q -c -m".\Debug\timer2.map" -o".\Debug\timer2.out" -x -l"cslDM642.lib" -l"rts6400.lib"
+
+["dotpV2_timer2.c" Settings: "Debug"]
+Options="Compiler" +{-gp -o3} -{-g}
+

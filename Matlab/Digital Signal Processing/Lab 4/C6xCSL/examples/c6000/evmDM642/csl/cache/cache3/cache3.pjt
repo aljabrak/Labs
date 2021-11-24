@@ -1,0 +1,24 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir=""
+ProjectType=Executable
+CPUFamily=TMS320C64XX
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+
+[Source Files]
+Source="main_cache3.c"
+Source="cache3.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr".\Debug" -d"CHIP_DM642" -ml3 -mv6400
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-q -c -m".\Debug\cache3.map" -o".\Debug\cache3.out" -x -l"cslDM642.lib" -l"rts6400.lib"
+
