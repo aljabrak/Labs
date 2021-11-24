@@ -1,0 +1,42 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="BlinkDSK6713"
+ProjectDir="$(Install_dir)\bin\utilities\flashburn\c6000\dsk6713\BlinkDSK6713\"
+ProjectType=Executable
+CPUFamily=TMS320C67XX
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="$(Install_dir)\c6000\bios\lib\csl6713.lib"
+Source="$(Install_dir)\c6000\cgtools\lib\rts6700.lib"
+Source="blink.c"
+Source="boot.asm"
+Source="cpld.c"
+Source="emif.c"
+Source="pll.c"
+Source="timer.c"
+Source="lnk.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-q -d"_DEBUG" -d"CHIP_6713" -mv6700
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr".\Release" -d"CHIP_6713" -mv6700
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-q -c -m"BlinkDSK6713.map" -o"BlinkDSK6713.out" -x
+
+["Linker" Settings: "Release"]
+Options=-q -c -m"BlinkDSK6713.map" -o"BlinkDSK6713.out" -x
+
