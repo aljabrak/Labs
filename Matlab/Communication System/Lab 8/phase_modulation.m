@@ -8,7 +8,7 @@ Ac = 1;
 c = Ac*cos(2*pi*fc*t);
 m = Am*cos(2*pi*fm*t);
 kp = pi;
-s = Ac*cos(2*pi*fc*t+kp*Mt);
+s = Ac*cos(2*pi*fc*t + kp*m);
 
 subplot(3,1,1)
 plot(t, m)
