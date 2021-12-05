@@ -9,13 +9,13 @@ These are the Electrical Engineering Labs, Assignments and End Semester Projects
 - [Microprocessor 8086](https://github.com/aljabrak/LABS/tree/main/Assembly/Microprocessor%208086)
 - [Microcontroller (Atmel 89C51)](https://github.com/aljabrak/LABS/tree/main/Assembly/Microcontroller%208051)
 ### [Signal and System (Matlab).](https://github.com/aljabrak/LABS/tree/main/Matlab/Signal%20and%20System)
-### [Digital Signal Processing (Matlab & Embedded C).](https://github.com/aljabrak/LABS/tree/main/Matlab/Digital%20Signal%20Processing)
+### [Digital Signal Processing (Matlab).](https://github.com/aljabrak/LABS/tree/main/Matlab/Digital%20Signal%20Processing)
 ### [Communication System (Matlab).](https://github.com/aljabrak/LABS-Projects/tree/main/Matlab/Communication%20System) <br/>
 
 # Projects
 - [World Clock (C)](https://github.com/aljabrak/LABS-Projects/tree/main/Projects/C/world-clock)
 - [Library Managment System (C++)](https://github.com/aljabrak/LABS-Projects/tree/main/Projects/C%2B%2B/library-system)
-- [Automatic Washroom System (Digital Logic Design)](https://github.com/aljabrak/LABS-Projects/tree/main/Projects/Digital%20Logic/automatic-washroom-system)
+- [Automatic Washroom System (Proteus - Digital Logic Design)](https://github.com/aljabrak/LABS-Projects/tree/main/Projects/Digital%20Logic/automatic-washroom-system)
 - [Robotic Arm (Embedded C)](https://github.com/aljabrak/LABS-Projects/tree/main/Projects/Assembly/robotic-arm)
 - [DTMF encoder & decoder (Matlab)](https://github.com/aljabrak/LABS-Projects/tree/main/Projects/Matlab/DTMF-encoder-decoder)
 
@@ -24,7 +24,7 @@ These are the Electrical Engineering Labs, Assignments and End Semester Projects
 - [Phonebook App (C++)](https://github.com/aljabrak/LABS-Projects/tree/main/Assignments/phonebook-app)
 - [Traffic System (C++)](https://github.com/aljabrak/LABS-Projects/tree/main/Assignments/traffic-system)
 - [n-type semiconductor graphs (Python)](https://github.com/aljabrak/LABS-Projects/tree/main/Electronic%20Circuit%20Design/n-type-semiconductor-graphs)
-- [Analog Clock (Assembly x86)](https://github.com/aljabrak/LABS-Projects/tree/main/Assignments/analog-clock)
+- [Analog Clock (Microsoft Assembly x86 - )](https://github.com/aljabrak/LABS-Projects/tree/main/Assignments/analog-clock)
 
 # Miscellaneous
 ### [Electronic Circuit Design (Python).](https://github.com/aljabrak/LABS-Projects/tree/main/Electronic%20Circuit%20Design)
