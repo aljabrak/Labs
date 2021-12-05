@@ -11,8 +11,8 @@ unsigned char data4[] = {0x80, 0x40, 0x20, 0x10};   //1000 0000, 0100 0000, 0010
                                                     //rotates the motor clockwise.
                                                     //data3 and data4 inits first 4 pins of Port 2 and 3.
 
-unsigned char x,y;
-int input,bit1,bit2;         //Global parameters to be accessed in functions.
+unsigned char x, y;
+int input, bit1, bit2;         //Global parameters to be accessed in functions.
 
 sbit R0 = P1^0;              //Assigning variables to pins for accessing.
 sbit R1 = P1^1;
@@ -48,7 +48,7 @@ void takeInput();
 
 void takeInput()         //takes distance units from keypad for the movement of robotic arm (Servo Motors).
 {                        //distance units = (number of rotations).
-	int s =0;
+	int s = 0;
 	next:
 	if (R0 == 1){
 		if (C0 == 1)
