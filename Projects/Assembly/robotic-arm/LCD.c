@@ -10,7 +10,7 @@ sbit R3 = P2^3;
 sbit C0 = P2^4;
 sbit C1 = P2^5;
 sbit C2 = P2^6;
-int input,bit1,bit2,v;        //Global variables.
+int input, bit1, bit2, v;        //Global variables.
 
 void delay2(void);
 void delay(void);
@@ -23,10 +23,10 @@ void printMessage();
 
 void delay()                  //Delay Function (slow delay).
 {
-	unsigned char i,j,k;
-	for(i=0;i<2;i++)
-		for(j=0;j<255;j++)
-	for(k=0;k<100;k++);
+	unsigned char i, j, k;
+	for(i = 0; i < 2; i++)
+		for(j = 0; j < 255; j++)
+	for(k = 0; k < 100; k++);
 }
 
 void cmd (char c)             //Command Function.
@@ -39,12 +39,12 @@ void cmd (char c)             //Command Function.
 }
 void display (char c)         //Display Function (displays a character).
 {
-	lcd=c;
-	rs=1;                 //Command is given to LCD.
+	lcd = c;
+	rs = 1;               //Command is given to LCD.
                               //Pulse Enable.
-	e=1;                  //enable 1.
+	e = 1;                //enable 1.
 	delay();              //delay of 0.2 seconds.
-	e=0;                  //enable 0.
+	e = 0;                //enable 0.
 }
 void string(char *p)         //String Function (displays a string).
 {
@@ -143,10 +143,10 @@ void printInput()          //Prints the distance units (number of rotations).
 		{	display('1');
 			delay();
 			s++;
-			if (s==1){
+			if (s == 1){
 				bit1 = 1;}
-			else if (s==2){
-				bit2 =1;
+			else if (s == 2){
+				bit2 = 1;
 				input = (bit1 * 10) + bit2;
 				printMessage();
 				return;
@@ -155,9 +155,9 @@ void printInput()          //Prints the distance units (number of rotations).
 		{	display('2');
 			delay();
 			s++;
-			if (s==1){
+			if (s == 1){
 				bit1 = 2;}
-			else if (s==2){
+			else if (s == 2){
 				bit2 = 2;
 				input = (bit1 * 10) + bit2;
 				printMessage();
@@ -166,9 +166,9 @@ void printInput()          //Prints the distance units (number of rotations).
 		{	display('3');
 			delay();
 			s++;
-			if (s==1){
+			if (s == 1){
 				bit1 = 3;}
-			else if (s==2){
+			else if (s == 2){
 				bit2 = 3;
 				input = (bit1 * 10) + bit2;
 				printMessage();
@@ -179,9 +179,9 @@ void printInput()          //Prints the distance units (number of rotations).
 		{	display('4');
 			delay();
 			s++;
-			if (s==1){
+			if (s == 1){
 				bit1 = 4;}
-			else if (s==2){
+			else if (s == 2){
 				bit2 = 4;
 				input = (bit1 * 10) + bit2;
 				printMessage();
@@ -190,9 +190,9 @@ void printInput()          //Prints the distance units (number of rotations).
 		{	display('5');
 			delay();
 			s++;
-			if (s==1){
+			if (s == 1){
 				bit1 = 5;}
-			else if (s==2){
+			else if (s == 2){
 				bit2 = 5;
 				input = (bit1 * 10) + bit2;
 				printMessage();
@@ -201,9 +201,9 @@ void printInput()          //Prints the distance units (number of rotations).
 		{	display('6');
 			delay();
 			s++;
-			if (s==1){
+			if (s == 1){
 				bit1 = 6;}
-			else if (s==2){
+			else if (s == 2){
 				bit2 = 6;
 				input = (bit1 * 10) + bit2;
 				printMessage();
@@ -215,9 +215,9 @@ void printInput()          //Prints the distance units (number of rotations).
 			display('7');
 			delay();
 			s++;
-			if (s==1){
+			if (s == 1){
 				bit1 = 7;}
-			else if (s==2){
+			else if (s == 2){
 				bit2 = 7;
 				input = (bit1 * 10) + bit2;
 				printMessage();
@@ -226,9 +226,9 @@ void printInput()          //Prints the distance units (number of rotations).
 		{	display('8');
 			delay();
 			s++;
-			if (s==1){
+			if (s == 1){
 				bit1 = 8;}
-			else if (s==2){
+			else if (s == 2){
 				bit2 = 8;
 				input = (bit1*10) + bit2;
 				printMessage();
@@ -237,9 +237,9 @@ void printInput()          //Prints the distance units (number of rotations).
 		{	display('9');
 			delay();
 			s++;
-			if (s==1){
+			if (s == 1){
 				bit1 = 9;}
-			else if (s==2){
+			else if (s == 2){
 			bit2 = 9;
 			input = (bit1 * 10) + bit2;
 			printMessage();
@@ -250,9 +250,9 @@ void printInput()          //Prints the distance units (number of rotations).
 		{	display('0');
 			delay();
 			s++;
-			if (s==1){
+			if (s == 1){
 				bit1 = 0;}
-			else if (s==2){
+			else if (s == 2){
 				bit2 = 0;
 				input = (bit1 * 10) + bit2;
 				printMessage();
@@ -308,7 +308,7 @@ void printMessage(){          //Prints message "ROBARM IS MOVING" "PRESS 9 TO ST
 void delay2(void)         //Delay Fucntion (fast delay).
 {
 	unsigned char i,j,k;
-	for(i=0;i<2;i++)
-		for(j=0;j<255;j++)
-	for(k=0;k<255;k++);
+	for(i = 0; i < 2; i++)
+		for(j = 0; j < 255; j++)
+	for(k = 0; k < 255; k++);
 }
