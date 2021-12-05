@@ -17,7 +17,7 @@ int main(void)
 
 double zeta(int n, int s)
 {
-	float sum = 0.0;
+	double sum = 0.0;
 	for(int i = 1; i <= n; i++)
 	{
 		sum += 1/pow(i, s);
