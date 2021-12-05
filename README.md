@@ -4,7 +4,7 @@ These are the Electrical Engineering Labs, Assignments and End Semester Projects
 
 ### [Fundamental of Programming Languages (C).](https://github.com/aljabrak/LABS/tree/main/C)
 ### [Object Oriented Programming (C++).](https://github.com/aljabrak/LABS/tree/main/C%2B%2B)
-### [Digital Logic Design (Verilog).](https://github.com/aljabrak/LABS/tree/main/Verilog)
+### [Digital Logic Design (Verilog).](https://github.com/aljabrak/LABS-Projects/tree/main/Verilog/Digital%20Logic%20Design)
 ### Microprocessor System (Assembly x86 & Embedded C).
 - [Microprocessor 8086](https://github.com/aljabrak/LABS/tree/main/Assembly/Microprocessor%208086)
 - [Microcontroller (Atmel 89C51)](https://github.com/aljabrak/LABS/tree/main/Assembly/Microcontroller%208051)
