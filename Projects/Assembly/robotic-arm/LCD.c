@@ -307,7 +307,7 @@ void printMessage(){          //Prints message "ROBARM IS MOVING" "PRESS 9 TO ST
 
 void delay2(void)         //Delay Fucntion (fast delay).
 {
-	unsigned char i,j,k;
+	unsigned char i, j, k;
 	for(i = 0; i < 2; i++)
 		for(j = 0; j < 255; j++)
 	for(k = 0; k < 255; k++);
