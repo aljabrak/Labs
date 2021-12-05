@@ -36,4 +36,3 @@ These are the Electrical Engineering Labs, Assignments and End Semester Projects
 ### [Mathematics (Python).](https://github.com/aljabrak/LABS/tree/main/Mathematics)
 ### Matlab Learning.
 - [Introduction To MATLAB 7 For Engineers.](https://github.com/aljabrak/Introduction-to-MATLAB-7-for-Engineers)
-### Web Development
