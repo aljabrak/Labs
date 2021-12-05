@@ -55,11 +55,11 @@ void takeInput()         //takes distance units from keypad for the movement of 
 		{
 			delay();
 			s++;
-			if (s==1)
+			if (s == 1)
 			{
 				bit1 = 1;
 			}
-			else if (s==2)
+			else if (s == 2)
 			{
 				bit2 = 1;
 				return ;
@@ -69,11 +69,11 @@ void takeInput()         //takes distance units from keypad for the movement of 
 		{
 			delay();
 			s++;
-			if (s==1)
+			if (s == 1)
 			{
 				bit1 = 2;
 			}
-			else if (s==2)
+			else if (s == 2)
 			{
 				bit2 = 2;
 				return ;
@@ -83,11 +83,11 @@ void takeInput()         //takes distance units from keypad for the movement of 
 		{
 			delay();
 			s++;
-			if (s==1)
+			if (s == 1)
 			{
 				bit1 = 3;
 			}
-			else if (s==2)
+			else if (s == 2)
 			{
 				bit2 = 3;
 				return;
@@ -99,11 +99,11 @@ void takeInput()         //takes distance units from keypad for the movement of 
 		{
 			delay();
 			s++;
-			if (s==1)
+			if (s == 1)
 			{
 				bit1 = 4;
 			}
-			else if (s==2)
+			else if (s == 2)
 			{
 				bit2 = 4;
 				return;
@@ -112,11 +112,11 @@ void takeInput()         //takes distance units from keypad for the movement of 
 		{
 			delay();
 			s++;
-			if (s==1)
+			if (s == 1)
 			{
 				bit1 = 5;
 			}
-			else if (s==2)
+			else if (s == 2)
 			{
 				bit2 = 5;
 				return;
@@ -125,11 +125,11 @@ void takeInput()         //takes distance units from keypad for the movement of 
 			{
 				delay();
 				s++;
-				if (s==1)
+				if (s == 1)
 				{
 					bit1 = 6;
 				}
-				else if (s==2)
+				else if (s == 2)
 				{
 					bit2 = 6;
 					return;
@@ -140,11 +140,11 @@ void takeInput()         //takes distance units from keypad for the movement of 
 		{
 			delay();
 			s++;
-			if (s==1)
+			if (s == 1)
 			{
 				bit1 = 7;
 			}
-			else if (s==2)
+			else if (s == 2)
 			{
 				bit2 = 7;
 				return;
@@ -153,11 +153,11 @@ void takeInput()         //takes distance units from keypad for the movement of 
 		{
 			delay();
 			s++;
-			if (s==1)
+			if (s == 1)
 			{
 				bit1 = 8;
 			}
-			else if (s==2)
+			else if (s == 2)
 			{
 				bit2 = 8;
 				return;
@@ -166,11 +166,11 @@ void takeInput()         //takes distance units from keypad for the movement of 
 		{
 			delay();
 			s++;
-			if (s==1)
+			if (s == 1)
 			{
 				bit1 = 9;
 			}
-			else if (s==2)
+			else if (s == 2)
 			{
 				bit2 = 9;
 				return;
@@ -182,11 +182,11 @@ void takeInput()         //takes distance units from keypad for the movement of 
 		{
 			delay();
 			s++;
-			if (s==1)
+			if (s == 1)
 			{
 				bit1 = 0;
 			}
-			else if (s==2)
+			else if (s == 2)
 			{
 				bit2 = 0;
 				return;
@@ -263,17 +263,17 @@ start:                  //start Label.
 
 void delay()         //Delay Function.
 {
-	unsigned char i,j,k;
-	for(i=0;i<2;i++)
-		for(j=0;j<255;j++)
-	for(k=0;k<255;k++);
+	unsigned char i, j, k;
+	for(i = 0; i < 2; i++)
+		for(j = 0; j < 255; j++)
+	for(k = 0; k < 255; k++);
 }
 
 void upward()         //Upward motion (anti-clockwise rotation) with Servo Motor 1.
 {
-	for (y=0;y<=input;y++)
+	for (y = 0; y <= input; y++)
 	{
-		for (x=0;x<=3;x++)
+		for (x = 0; x<= 3; x++)
 		{
 			P2 = data1[x];
 			delay();
@@ -285,9 +285,9 @@ void upward()         //Upward motion (anti-clockwise rotation) with Servo Motor
 
 void downward()         //Downward motion (clockwise rotation) with Servo Motor 1.
 {
-	for (y=0;y<=input;y++)
+	for (y = 0; y <= input; y++)
 	{
-		for (x=0;x<=3;x++)
+		for (x = 0; x <= 3; x++)
 		{
 			P2 = data2[x];
 			delay();
@@ -299,9 +299,9 @@ void downward()         //Downward motion (clockwise rotation) with Servo Motor 
 
 void forward()         //Forward motion (anti-clockwise rotation) with Servo Motor 2.
 {
-	for (y=0;y<=input;y++)
+	for (y = 0; y <= input; y++)
 	{
-		for (x=0;x<=3;x++)
+		for (x = 0; x <= 3; x++)
 		{
 			P2 = data3[x];
 			delay();
@@ -313,9 +313,9 @@ void forward()         //Forward motion (anti-clockwise rotation) with Servo Mot
 
 void reverse()         //Reverse motion (clockwise rotation) with Servo Motor 2.
 {
-	for (y=0;y<=input;y++)
+	for (y = 0; y <= input; y++)
 	{
-		for (x=0;x<=3;x++)
+		for (x = 0; x <= 3; x++)
 		{
 			P2 = data4[x];
 			delay();
@@ -328,9 +328,9 @@ void reverse()         //Reverse motion (clockwise rotation) with Servo Motor 2.
 
 void left()          //Left motion (anti-clockwise rotation) with Servo Motor 3.
 {
-	for (y=0;y<=input;y++)
+	for (y = 0; y <= input; y++)
 	{
-		for (x=0;x<=3;x++)
+		for (x = 0; x <= 3; x++)
 		{
 			P3 = data1[x];
 			delay();
@@ -342,9 +342,9 @@ void left()          //Left motion (anti-clockwise rotation) with Servo Motor 3.
 
 void right()        //Right motion (clockwise rotation) with Servo Motor 3.
 {
-	for (y=0;y<=input;y++)
+	for (y = 0; y <= input; y++)
 	{
-		for (x=0;x<=3;x++)
+		for (x = 0; x <= 3; x++)
 		{
 			P3 = data2[x];
 			delay();
@@ -356,9 +356,9 @@ void right()        //Right motion (clockwise rotation) with Servo Motor 3.
 
 void gripclose()        //Grip close motion (anti-clockwise rotation) with Servo Motor 4.
 {
-	for (y=0;y<=input;y++)
+	for (y = 0; y <= input; y++)
 	{
-		for (x=0;x<=3;x++)
+		for (x = 0; x <= 3; x++)
 		{
 			P3 = data3[x];
 			delay();
@@ -371,9 +371,9 @@ void gripclose()        //Grip close motion (anti-clockwise rotation) with Servo
 
 void gripopen()         //Grip open motion (clockwise rotation) with Servo Motor 4.
 {
-	for (y=0;y<=input;y++)
+	for (y = 0; y <= input; y++)
 	{
-		for (x=0;x<=3;x++)
+		for (x = 0; x <= 3; x++)
 		{
 			P3 = data4[x];
 			delay();
