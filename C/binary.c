@@ -1,3 +1,4 @@
+// Binary to Decimal Converter.
 #include <stdio.h>
 #include <math.h>
 
@@ -16,6 +17,6 @@ int main()
         x = x/10;
         i += 1;
     }
-    printf("%d", sum);
+    printf("Decimal Number: %d", sum);
     return 0;
 }
