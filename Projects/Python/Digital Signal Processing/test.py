@@ -3,6 +3,7 @@ from matplotlib.pyplot import *
 from scipy import *
 from pandas import *
 from sklearn import *
+from pandas.plotting import *
 
 file = 'https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data'
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
@@ -13,4 +14,10 @@ print(data.head(30))
 print(data.describe())
 print(data.groupby('class').size())
 data.plot(kind = 'box', subplots = True, layout = (2, 2), sharex = False, sharey = False)
+show()
+data.plot(kind = 'box', subplots = True, layout = (2, 2), sharex = True, sharey = True)
+show()
+data.hist()
+show()
+scatter_matrix(data)
 show()
