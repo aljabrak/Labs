@@ -1,6 +1,6 @@
 # LABS
 These are the Electrical Engineering Labs, Assignments and End Semester Projects which I did at SEECS NUST, Islamabad. <br/>
-This repository is dedicated to my late friend Talal Qamar Sahi (2001-2021) @TalalQamar99, who was a source of inspiration <br/>
+This repository is dedicated to my late friend Talal Qamar Sahi (2001-2021), who was a source of inspiration <br/>
 for me and whose passion for programming strived me.
 
 
