@@ -1,41 +1,67 @@
-# LABS
+# LAPS
 These are the Electrical Engineering Labs, Assignments and End Semester Projects which I did at SEECS NUST, Islamabad.
 This repository is dedicated to my late friend Talal Qamar Sahi (2001-2021), who was a source of inspiration for me and
 whose passion for programming strived me. <br/>
 
 
 
-### [Fundamental of Programming Languages (C).](https://github.com/aljabrak/LABS/tree/main/C)
-### [Object Oriented Programming (C++).](https://github.com/aljabrak/LABS/tree/main/C%2B%2B)
-### [Digital Logic Design (Verilog).](https://github.com/aljabrak/LABS-Projects/tree/main/Verilog/Digital%20Logic%20Design)
-### Microprocessor System (Assembly x86 & Embedded C).
-- [Microprocessor 8086 (Microsoft Assembly x86 - Kip Irvine32)](https://github.com/aljabrak/LABS/tree/main/Assembly/Microprocessor%208086)
-- [Microcontroller (Atmel 89C51)](https://github.com/aljabrak/LABS/tree/main/Assembly/Microcontroller%208051)
-### [Signal and System (Matlab).](https://github.com/aljabrak/LABS/tree/main/Matlab/Signal%20and%20System)
-### [Digital Signal Processing (Matlab).](https://github.com/aljabrak/LABS/tree/main/Matlab/Digital%20Signal%20Processing)
-### [Communication System (Matlab).](https://github.com/aljabrak/LABS-Projects/tree/main/Matlab/Communication%20System) <br/>
+## Fundamentals of Programming (C).
+- [Labs.](https://github.com/saudzahirr/LAPS/tree/main/Fundamentals%20of%20Programming.%20(C)/Labs)
+- Project:<br/>[World Clock.](https://github.com/saudzahirr/LAPS/tree/main/Fundamentals%20of%20Programming.%20(C)/Project)
 
-# Projects
-- [World Clock (C)](https://github.com/aljabrak/LABS-Projects/tree/main/Projects/C/world-clock)
-- [Library Managment System (C++)](https://github.com/aljabrak/LABS-Projects/tree/main/Projects/C%2B%2B/library-system)
-- [Automatic Washroom System (Proteus - Digital Logic Design)](https://github.com/aljabrak/LABS-Projects/tree/main/Projects/Digital%20Logic/automatic-washroom-system)
-- [Robotic Arm (Embedded C)](https://github.com/aljabrak/LABS-Projects/tree/main/Projects/Assembly/robotic-arm)
-- [DTMF encoder & decoder (Matlab)](https://github.com/aljabrak/LABS-Projects/tree/main/Projects/Matlab/DTMF-encoder-decoder)
+## Object Oriented Programming (C++).
+- [Labs.](https://github.com/saudzahirr/LAPS/tree/main/Object%20Oriented%20Programming.%20(C%2B%2B)/Labs)
+- Assignments:<br/>
+1) [Bank Account.](https://github.com/saudzahirr/LAPS/tree/main/Object%20Oriented%20Programming.%20(C%2B%2B)/Assignments/Bank%20Account)<br/>
+2) [Phonebook App.](https://github.com/saudzahirr/LAPS/tree/main/Object%20Oriented%20Programming.%20(C%2B%2B)/Assignments/Phonebook%20App)<br/>
+3) [Traffic System.](https://github.com/saudzahirr/LAPS/tree/main/Object%20Oriented%20Programming.%20(C%2B%2B)/Assignments/Traffic%20System)<br/>
+- Project:<br/>[Library Managment System.](https://github.com/saudzahirr/LAPS/tree/main/Object%20Oriented%20Programming.%20(C%2B%2B)/Project)
+- [End Semester Exam.](https://github.com/saudzahirr/LAPS/tree/main/Object%20Oriented%20Programming.%20(C%2B%2B)/End%20Semester%20Exam)
 
-# Assignments
-- [Bank Account (C++)](https://github.com/aljabrak/LABS-Projects/tree/main/Assignments/bank-account)
-- [Phonebook App (C++)](https://github.com/aljabrak/LABS-Projects/tree/main/Assignments/phonebook-app)
-- [Traffic System (C++)](https://github.com/aljabrak/LABS-Projects/tree/main/Assignments/traffic-system)
-- [n-type semiconductor graphs (Python)](https://github.com/aljabrak/LABS-Projects/tree/main/Electronic%20Circuit%20Design/n-type-semiconductor-graphs)
-- [Analog Clock (Turbo Assembly x86 - TASM)](https://github.com/aljabrak/LABS-Projects/tree/main/Assignments/analog-clock)
+## Electronic Circuit Design (Python).
+- Assignments:<br/>
+[n-type Semiconductor Graphs.](https://github.com/saudzahirr/LAPS/tree/main/Electronic%20Devices%20%26%20Circuits.%20(Python)/Assignments)
+
+## Digital Logic Design (Verilog).
+- [Labs.](https://github.com/saudzahirr/LAPS/tree/main/Digital%20Logic%20Design.%20(Verilog)/Labs)
+- Project:<br/>[Automatic Washroom System.](https://github.com/saudzahirr/LAPS/tree/main/Digital%20Logic%20Design.%20(Verilog)/Project)
+
+## Microprocessor System (Assembly x86 & Embedded C).
+### Microprocessor 8086 (Microsoft Assembly x86 - Kip Irvine32)
+- [Labs.](https://github.com/saudzahirr/LAPS/tree/main/Microprocessor%20Systems.%20(Assembly%20%26%20Embedded%20C)/Labs/Microprocessor%208086)
+- [Lectures.](https://github.com/saudzahirr/LAPS/tree/main/Microprocessor%20Systems.%20(Assembly%20%26%20Embedded%20C)/Lectures/Microprocessor%208086)<br/>
+Assignments:<br/>
+1) [Analog Clock (TASM).](https://github.com/saudzahirr/LAPS/tree/main/Microprocessor%20Systems.%20(Assembly%20%26%20Embedded%20C)/Assignments/Analog%20Clock%20(TASM))
+2) [Assignment-2 (MASM).](https://github.com/saudzahirr/LAPS/tree/main/Microprocessor%20Systems.%20(Assembly%20%26%20Embedded%20C)/Assignments/Assignment-2%20(MASM))
+### Microcontroller (Atmel 89C51)
+- [Labs.](https://github.com/saudzahirr/LAPS/tree/main/Microprocessor%20Systems.%20(Assembly%20%26%20Embedded%20C)/Labs/Microcontroller%208051)
+- [Lectures.](https://github.com/saudzahirr/LAPS/tree/main/Microprocessor%20Systems.%20(Assembly%20%26%20Embedded%20C)/Lectures/Microcontroller%208051)
+- Project:<br/>[Robotic Arm.](https://github.com/saudzahirr/LAPS/tree/main/Microprocessor%20Systems.%20(Assembly%20%26%20Embedded%20C)/Project)
+
+## Signal and System (Matlab).
+- [Labs.](https://github.com/saudzahirr/LAPS/tree/main/Fundamentals%20of%20Programming.%20(C)/Labs)
+- Project:<br/>[DTMF Encoder Decoder.](https://github.com/saudzahirr/LAPS/tree/main/Signals%20%26%20Systems.%20(MATLAB)/Project)
+
+## Digital Signal Processing (Matlab).
+- [Labs.](https://github.com/saudzahirr/LAPS/tree/main/Digital%20Signal%20Processing.%20(MATLAB)/Labs)
+- Project:<br/>[Speech Compression using FFT.]()
+
+## Communication System (Matlab).
+- [Labs.](https://github.com/saudzahirr/LAPS/tree/main/Communication%20Systems.%20(MATLAB)/Labs)
+- Project:<br/>[Superheterodyne Receiver (Hardware).]()
+<br/>
+
 
 # Miscellaneous
-### [Electronic Circuit Design (Python).](https://github.com/aljabrak/LABS-Projects/tree/main/Electronic%20Circuit%20Design)
-### [Electrical Machinery (Matlab).](https://github.com/aljabrak/LABS-Projects/tree/main/Electrical%20Machinery)
-### [Arduino.](https://github.com/aljabrak/LABS-Projects/tree/main/Arduino)
-### [Embedded C.](https://github.com/aljabrak/LABS-Projects/tree/main/Embedded-C)
-### [Python Programming (Python & Jupyter Notebook).](https://github.com/aljabrak/LABS/tree/main/Python)
+## [Electrical Machinery (Matlab).](https://github.com/saudzahirr/LAPS/tree/main/Miscellaneous/Electrical%20Machinery)
+
+## [Arduino.](https://github.com/saudzahirr/LAPS/tree/main/Miscellaneous/Arduino)
+
+## [Python Programming (Python & Jupyter Notebook).](https://github.com/saudzahirr/LAPS/tree/main/Miscellaneous/Python)
 - For Learning Python. <br/> [Starting Out with Python.](https://github.com/aljabrak/Starting-Out-with-Python)
-### [Mathematics.](https://github.com/aljabrak/LABS/tree/main/Mathematics)
-### Matlab Learning.
+
+## [Mathematics.](https://github.com/saudzahirr/LAPS/tree/main/Miscellaneous/Mathematics)
+
+## Matlab Learning.
 - [Introduction To MATLAB 7 For Engineers.](https://github.com/aljabrak/Introduction-to-MATLAB-7-for-Engineers)
+
