@@ -1,0 +1,186 @@
+# Itertools.
+# There are two types of iterators:
+# 1) Infinite Iterators. (count, cycle, repeat)
+# 2) Finite Iterators. (chain, compress, dropwhile)
+
+from itertools import *
+from functools import *
+from operator import *
+
+even = count(start=0, step=2)
+
+for number in even:
+  if number < 10:
+    print(number)
+  else:
+    break
+
+natural = [1, 2, 3, 4]
+fibbonnaci = [1, 1, 2, 3, 5, 8, 13, 21]
+
+for a, b in zip(cycle(natural), fibbonnaci):
+  print(a, b)
+
+text = repeat("Hello, world!", times = 4)
+for word in text:
+  print(word)
+
+numbers = chain(natural, fibbonnaci)
+for number in numbers:
+  print(number)
+
+whole = [0, 1, -2, 2, -3]
+check = [True, True, False, True, False]
+
+for number in compress(whole, check):
+  print(number)
+
+numbers = [0, 0, 1, 2, 0, 3]
+
+for elements in dropwhile(lambda x: x == 0, numbers):
+  print (elements)
+
+
+
+
+
+
+
+
+# Functools
+
+x = [(i, number) for i, number in enumerate(fibbonnaci)]
+print(x)
+
+x = map(lambda x: x**2, natural)
+x = list(x)
+print(x)
+
+x = reduce(lambda x, y: x*y, natural)
+print(x)
+
+
+
+
+
+
+
+
+# List and Tuples.
+
+numbers = []
+
+for number in range(5):
+  numbers.append(number)
+
+item = int(input("x = "))
+
+try:
+  numbers.index(item)
+  print(numbers)
+
+except ValueError as err:
+  print(err)
+
+
+numbers.insert(2, 5)
+print(numbers)
+
+numbers.sort()
+print(numbers)
+
+numbers.reverse()
+print(numbers)
+numbers.reverse()
+
+item = int(input("x = "))
+numbers.remove(item)
+print(numbers)
+
+print(min(numbers))
+print(max(numbers))
+
+numbers = tuple(numbers)
+print(numbers)
+numbers = list(numbers)
+print(numbers)
+
+del numbers
+
+
+
+
+
+
+
+# Dictionary and Sets.
+phonebook = {'Chris': '555-1111', 'Katie': '555-2222', 'Joanne': '555-3333'}
+# phonebook = dict()
+
+key = str(input("Name: "))
+value = phonebook.get(key, "Not Found.")
+print(value)
+
+for key, value in phonebook.items():
+  print(key, value)
+
+for key in phonebook.keys():
+  print(key)
+
+for value in phonebook.values():
+  print(value)
+
+key = str(input("Name: "))
+value = phonebook.pop(key, "Not Found.")
+print(value)
+print(phonebook)
+
+key, value = phonebook.popitem()
+print(key, value)
+print(phonebook)
+
+phonebook['Katie'] = '555-2222'
+phonebook['Joanne'] = '555-3333'
+print(phonebook)
+
+del phonebook['Joanne']
+print(phonebook)
+
+phonebook.clear()
+print(phonebook)
+
+
+integers = set([-4, -3, -2, -1, 0, 1, 2, 3, 4])
+natural_numbers = set([1, 2, 3, 4, 5, 6, 7, 8])
+whole_numbers = set([0, 1, 2, 3, 4, 5, 6, 7, 8])
+
+print( whole_numbers.union(natural_numbers) )
+print( natural_numbers.union(whole_numbers) )
+print( integers.intersection(whole_numbers) )
+print( whole_numbers.update(set([7, 8 ,9])) )
+print( natural_numbers.isdisjoint(integers) )
+print( natural_numbers.issubset(whole_numbers) )
+print( whole_numbers.issuperset(integers) )
+print( natural_numbers.difference(whole_numbers) )
+print( natural_numbers.symmetric_difference(whole_numbers) )
+
+
+
+
+
+
+
+
+file = open('file', 'w')
+file.write('Hello, world!')
+file.close()
+
+file = open('file', 'w')
+try:
+	file.write('Hello, world!')
+finally:
+	file.close()
+
+
+with open('file', 'w') as file:
+	file.write('Hello, world!')
