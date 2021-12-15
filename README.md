@@ -39,7 +39,7 @@ Assignments:<br/>
 - Project:<br/>[Robotic Arm.](https://github.com/saudzahirr/LAPS/tree/main/Microprocessor%20Systems.%20(Assembly%20%26%20Embedded%20C)/Project)
 
 ## Signal and System (Matlab).
-- [Labs.](https://github.com/saudzahirr/LAPS/tree/main/Fundamentals%20of%20Programming.%20(C)/Labs)
+- [Labs.](https://github.com/saudzahirr/LAPS/tree/main/Signals%20%26%20Systems.%20(MATLAB)/Labs)
 - Project:<br/>[DTMF Encoder Decoder.](https://github.com/saudzahirr/LAPS/tree/main/Signals%20%26%20Systems.%20(MATLAB)/Project)
 
 ## Digital Signal Processing (Matlab).
