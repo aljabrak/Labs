@@ -44,7 +44,7 @@ Assignments:<br/>
 
 ## Digital Signal Processing (Matlab).
 - [Labs.](https://github.com/saudzahirr/LAPS/tree/main/Digital%20Signal%20Processing.%20(MATLAB)/Labs)
-- Project:<br/>[Speech Compression using FFT.]()
+- Project:<br/>[Speech Compression using FFT.](https://github.com/saudzahirr/EELAPS/tree/main/Digital%20Signal%20Processing.%20(MATLAB)/Project)
 
 ## Communication System (Matlab).
 - [Labs.](https://github.com/saudzahirr/LAPS/tree/main/Communication%20Systems.%20(MATLAB)/Labs)
