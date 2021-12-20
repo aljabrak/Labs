@@ -8,6 +8,7 @@ def myFun(arg1, *argv):
 myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks')
 
 
+
 # Python program to illustrate
 # *kwargs for variable number of keyword arguments
 
