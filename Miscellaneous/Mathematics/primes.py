@@ -18,13 +18,26 @@ def Prime(N):
 
 def main():
     N = int(input("Enter Number: N = "))
-    primes = Prime(N)
-    print(primes)
-    natural = [i for i in range(1, N + 1)]
-    figure, axis = subplots(2, 1)
-    axis[0].stem(primes)
-    axis[1].stem(natural)
+    # primes = Prime(N)
+    # print(primes)
+    # natural = [i for i in range(1, N + 1)]
+    # figure, axis = subplots(2, 1)
+    # axis[0].stem(primes)
+    # axis[1].stem(natural)
+    # show()
+
+    P = [] # Probability of number of primes in given range of natural numbers.
+    for j in range(1, N + 1):
+        primes = Prime(j)
+        n = len(primes)
+        p = n/j
+        P.append(p)
+    
+    print("P = ", P)
+    plot(P)
     show()
+    savefig()
+
 
 
 main()
