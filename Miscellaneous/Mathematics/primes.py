@@ -41,6 +41,15 @@ def main():
     grid()
     savefig("primes.png")
     show()
+    
+    figure, axis = subplots(2, 2)
+    axis[0, 0].plot(P[:20])
+    axis[0, 1].plot(P[:50])
+    axis[1, 0].plot(P[:500])
+    axis[1, 1].plot(P)
+    xlim([1, N])
+    savefig("probability.png")
+    show()
 
 
 
