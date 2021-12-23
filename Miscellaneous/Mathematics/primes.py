@@ -35,8 +35,12 @@ def main():
     
     print("P = ", P)
     plot(P)
+    xlim([1, N])
+    ylabel("Probability")
+    xlabel("Natural Numbers")
+    grid()
+    savefig("primes.png")
     show()
-    savefig()
 
 
 
