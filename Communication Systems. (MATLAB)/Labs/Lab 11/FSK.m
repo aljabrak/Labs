@@ -20,5 +20,6 @@ end
 
 plot(t, s);
 grid on
+title('FSK Modulation.');
 xlabel('t');
 ylabel('s(t)');
