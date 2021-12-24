@@ -4,7 +4,7 @@ from numpy import *
 def Fibonacci(N):
     a = 0
     b = 1
-    F = []
+    F = [a, b]
     for j in range(1, N + 1):
         c = a + b
         a = b
@@ -16,11 +16,12 @@ def Fibonacci(N):
 
 def main():
     N = int(input("N = "))
-    n = Fibonacci(N)
+    S = Fibonacci(N)
     j = len(n)
-
-    golden_mean = 1 + n[j - 2]/n[j - 1]
+    golden_mean = 1 + S[j - 2]/S[j - 1]
     phi = (1 + sqrt(5))/2
+    
+    print(S)
     print(golden_mean)
     print("Error = ", phi - golden_mean)
 
