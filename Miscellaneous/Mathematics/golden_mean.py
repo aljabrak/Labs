@@ -17,7 +17,7 @@ def Fibonacci(N):
 def main():
     N = int(input("N = "))
     S = Fibonacci(N)
-    j = len(n)
+    j = len(S)
     golden_mean = 1 + S[j - 2]/S[j - 1]
     phi = (1 + sqrt(5))/2
     
