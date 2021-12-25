@@ -6,3 +6,4 @@ pause(30);
 [y, F] = FFT(x, Fs);
 compressed_audio = compress(y, F);
 sound(compressed_audio, Fs);
+graphs(Fs, x);
