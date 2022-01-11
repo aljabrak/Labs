@@ -48,7 +48,7 @@ Assignments:<br/>
 
 ## Communication System (Matlab).
 - [Labs.](https://github.com/saudzahirr/LAPS/tree/main/Communication%20Systems.%20(MATLAB)/Labs)
-- Project:<br/>[Superheterodyne Receiver (Hardware).]()
+- Project:<br/>[Superheterodyne Receiver (Hardware).](https://github.com/saudzahirr/EELAPS/tree/main/Communication%20Systems.%20(MATLAB)/Project)
 <br/>
 
 
