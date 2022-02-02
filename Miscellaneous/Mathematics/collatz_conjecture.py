@@ -8,20 +8,37 @@ https://www.quantamagazine.org/why-mathematicians-still-cant-solve-the-collatz-c
 """
 
 
+from matplotlib.pyplot import *
+from itertools import *
+
+
 def f(n):
-    if n % 2 == 0:
-        a = n / 2
-        print(a)
-        f(a)
+    y = [n]
+    step = 0
+    for i in count(0, 2):
+        if n % 2 == 0:
+            n = n/2
+            y.append(n)
+            step += 1
 
-    elif n == 1:
-        n = n
+        elif n == 1:
+            break
         
-    else:
-        a = 3 * n + 1
-        print(a)
-        f(a)
+        else:
+            n = 3 * n + 1
+            y.append(n)
+            step += 1
+    
+    return y, step
 
-        
-N = 10**20
-f(N)
+
+
+X = f(9341972891)[0]
+n = f(9341972891)[1]
+
+print(X)
+print(n)
+
+plot(X)
+grid(True)
+show()
