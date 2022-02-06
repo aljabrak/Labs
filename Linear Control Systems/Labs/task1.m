@@ -20,4 +20,3 @@ disp(G4);
 g5 = 5*t^(2)*cos(3*t + 45);
 G5 = laplace(g5);
 disp(G5);
-
