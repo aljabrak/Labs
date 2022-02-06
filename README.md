@@ -38,7 +38,7 @@ Assignments:<br/>
 - [Lectures.](https://github.com/saudzahirr/LAPS/tree/main/Microprocessor%20Systems.%20(Assembly%20%26%20Embedded%20C)/Lectures/Microcontroller%208051)
 - Project:<br/>[Robotic Arm.](https://github.com/saudzahirr/LAPS/tree/main/Microprocessor%20Systems.%20(Assembly%20%26%20Embedded%20C)/Project)
 
-## Signal and System (Matlab).
+## Signals and Systems (Matlab).
 - [Labs.](https://github.com/saudzahirr/LAPS/tree/main/Signals%20%26%20Systems.%20(MATLAB)/Labs)
 - Project:<br/>[DTMF Encoder Decoder.](https://github.com/saudzahirr/LAPS/tree/main/Signals%20%26%20Systems.%20(MATLAB)/Project)
 
@@ -46,9 +46,13 @@ Assignments:<br/>
 - [Labs.](https://github.com/saudzahirr/LAPS/tree/main/Digital%20Signal%20Processing.%20(MATLAB)/Labs)
 - Project:<br/>[Speech Compression using FFT.](https://github.com/saudzahirr/EELAPS/tree/main/Digital%20Signal%20Processing.%20(MATLAB)/Project)
 
-## Communication System (Matlab).
+## Communication Systems (Matlab).
 - [Labs.](https://github.com/saudzahirr/LAPS/tree/main/Communication%20Systems.%20(MATLAB)/Labs)
 - Project:<br/>[Superheterodyne Receiver (Hardware).](https://github.com/saudzahirr/EELAPS/tree/main/Communication%20Systems.%20(MATLAB)/Project)
+
+## Linear Control Systems (Matlab).
+- [Labs.](https://github.com/saudzahirr/EELAPS/tree/main/Linear%20Control%20Systems/Labs)
+- Project:<br/>
 <br/>
 
 
