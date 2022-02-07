@@ -53,6 +53,9 @@ Assignments:<br/>
 ## Linear Control Systems (Matlab).
 - [Labs.](https://github.com/saudzahirr/EELAPS/tree/main/Linear%20Control%20Systems/Labs)
 - Project:<br/>
+
+## Numerical Methods (Matlab & Python).
+- [Newton-Raphson Method](https://github.com/saudzahirr/EELAPS/tree/main/Numerical%20Methods)
 <br/>
 
 
