@@ -15,12 +15,13 @@ def newtons_method(f, df, x0, n):
     return x
 
 
-f = lambda x: x**2 + 4*x + 1
-df = lambda x: 2*x + 4
-x0 = 0
+f = lambda x: 2*x**3 + x - 2
+df = lambda x: 6*x**2 + 1
+x0 = 0.5
 n = 10000
-root = newtons_method(f, df, x0, n)
-print(root)
+x = newtons_method(f, df, x0, n)
+print(x)
+root = 0.835122345
 
-err = (1 - (root / (-2 + np.sqrt(3)))) * 100
-print("Error = {a:.3e}%".format(a = err))
+err = abs(1 - x/root) * 100
+print("Error = {a:.2f}%".format(a = err))
