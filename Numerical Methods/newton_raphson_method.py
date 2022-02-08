@@ -1,6 +1,3 @@
-import numpy as np
-
-
 def newtons_method(f, df, x0, n):
     """
     f(x) : Function,
