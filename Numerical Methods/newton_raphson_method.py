@@ -3,10 +3,10 @@ import numpy as np
 
 def newtons_method(f, df, x0, n):
     """
-    f(x) = Function,
-    df(x) = Derivative of function,
-    x0 = Inspected (guessed) root,
-    n = Number of iterations.
+    f(x) : Function,
+    df(x) : Derivative of function,
+    x0 : Inspected (guessed) root,
+    n : Number of iterations.
     """
     x = x0
     for a in range(1, n):
