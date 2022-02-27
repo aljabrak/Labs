@@ -1,5 +1,5 @@
 function [x, n] = regula_falsi_method(f, a, b, iter)
-format long
+
 p = [];
 n = 0;
 if polyval(f, a) * polyval(f, b) < 0
@@ -15,9 +15,14 @@ if polyval(f, a) * polyval(f, b) < 0
         
         elseif round(polyval(f, a) * polyval(f, b)) == 0
             break
-        
+           
+        else
+            break
         end
     end
+    x = p;
+else
+    x = 'Error';
 end
-x = p;
+
 end
