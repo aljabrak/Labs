@@ -1,3 +1,6 @@
+from numpy import *
+
+
 def bisection_method(f, R, n):
     """
     f(x) : Function,
@@ -6,14 +9,23 @@ def bisection_method(f, R, n):
     """
     a = R[0]
     b = R[1]
+    iterations = 0
+    
     if f(a) * f(b) < 0:
+        
         for i in range(0, n):
+            iterations += 1
             c = (a + b) / 2
+            
             if f(a) * f(c) < 0:
                 b = c
 
             elif f(b) * f(c) < 0:
                 a = c
+            
+            elif round(f(a) * f(b), 4) == 0:
+                print("Iterations: {a:.0f}".format(a = iterations))
+                break
 
             else:
                 break
@@ -23,12 +35,9 @@ def bisection_method(f, R, n):
     return c
 
 
-f = lambda x: 2*x**3 + x - 2
-R = [0, 1]
-n = 4
-x = bisection_method(f, R, n)
-print(x)
-root = 0.835122345
+f = lambda x: 0.5 + 2*exp(3*x) - 1*exp(-1*x) 
+R = [-0.5, 0]
+n = 300
 
-err = abs(1 - x/root) * 100
-print("Error = {a:.2f}%".format(a = err))
+x = bisection_method(f, R, n)
+print("(", x, ", ", abs(f(x)), ")", sep="")
