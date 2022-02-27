@@ -15,9 +15,7 @@ if polyval(f, a) * polyval(f, b) < 0
         
         elseif round(polyval(f, a) * polyval(f, b)) == 0
             break
-           
-        else
-            break
+        
         end
     end
     x = p;
