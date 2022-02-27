@@ -55,7 +55,7 @@ Assignments:<br/>
 - Project:<br/>
 
 ## Numerical Methods (Matlab & Python).
-- [Newton-Raphson Method](https://github.com/saudzahirr/EELAPS/tree/main/Numerical%20Methods)
+- [Assignments](https://github.com/saudzahirr/EELAPS/tree/main/Numerical%20Methods/Assignments)
 <br/>
 
 
