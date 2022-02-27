@@ -1,3 +1,6 @@
+from numpy import *
+
+
 def newtons_method(f, df, x0, n):
     """
     f(x) : Function,
@@ -6,19 +9,23 @@ def newtons_method(f, df, x0, n):
     n : Number of iterations.
     """
     x = x0
-    for a in range(1, n):
-        x -= f(x) / df(x)
+    iterations = 0
     
+    for a in range(1, n):
+        iterations += 1
+        x -= f(x) / df(x)
+        
+        if f(x) / df(x) == 0:
+            print("Iterations: {a:.0f}".format(a = iterations))
+            break
+            
     return x
 
 
-f = lambda x: 2*x**3 + x - 2
-df = lambda x: 6*x**2 + 1
-x0 = 0.5
-n = 10000
-x = newtons_method(f, df, x0, n)
-print(x)
-root = 0.835122345
+f = lambda x: 4 * exp(-x) * sin(x) - 1
+df = lambda x: 4 * exp(-x) * (cos(x) - sin(x))
+x0 = 0.25
+n = 100
 
-err = abs(1 - x/root) * 100
-print("Error = {a:.2f}%".format(a = err))
+x = newtons_method(f, df, x0, n)
+print("(", x, ", ", f(x), ")", sep="")
