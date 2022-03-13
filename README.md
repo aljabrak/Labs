@@ -1,8 +1,7 @@
 # EELAPS
 <img src="https://user-images.githubusercontent.com/76210541/156714947-d82a2fab-6bc0-4189-99ef-f7761976ee3e.png" width="150" height="150">
 These are the Electrical Engineering Labs, Assignments and End Semester Projects which I did at SEECS NUST, Islamabad.
-This repository is dedicated to my late friend Talal Qamar Sahi (2001-2021), who was a source of inspiration for me and
-whose passion for programming strived me. <br/>
+<br/>
 
 
 
