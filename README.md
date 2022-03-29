@@ -60,7 +60,6 @@ Assignments:<br/>
 
 
 # Miscellaneous
-## [Electrical Machinery (Matlab).](https://github.com/saudzahirr/LAPS/tree/main/Miscellaneous/Electrical%20Machinery)
 
 ## [Arduino.](https://github.com/saudzahirr/LAPS/tree/main/Miscellaneous/Arduino)
 
@@ -72,3 +71,4 @@ Assignments:<br/>
 ## Matlab Learning.
 - [Introduction To MATLAB 7 For Engineers.](https://github.com/aljabrak/Introduction-to-MATLAB-7-for-Engineers)
 
+s
