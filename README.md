@@ -52,6 +52,7 @@ Assignments:<br/>
 
 ## Linear Control Systems (Matlab).
 - [Labs.](https://github.com/saudzahirr/EELAPS/tree/main/Linear%20Control%20Systems/Labs)
+- [Assignments.](https://github.com/saudzahirr/EELAPS/blob/main/Linear%20Control%20Systems/Assignments)
 - Project:<br/>
 
 ## Numerical Methods (Matlab & Python).
@@ -71,4 +72,3 @@ Assignments:<br/>
 ## Matlab Learning.
 - [Introduction To MATLAB 7 For Engineers.](https://github.com/aljabrak/Introduction-to-MATLAB-7-for-Engineers)
 
-s
