@@ -15,12 +15,12 @@ if polyval(f, a) * polyval(f, b) < 0
         
         elseif round(polyval(f, a) * polyval(f, b)) == 0
             break
-        
+                   
         end
     end
     x = p;
 else
-    x = 'Error';
+    x = "Error";
 end
 
 end
